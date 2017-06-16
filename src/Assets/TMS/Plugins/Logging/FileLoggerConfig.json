@@ -1,0 +1,22 @@
+﻿{
+	"enabled":  true,
+	"logTarget": "File",
+	"logSeverity": "Normal",
+	"timeStampFormat": "T",
+	"autoTimeStamp": true,
+	"msgFormat": "{0}",
+	"cacheEnabled": true,
+	"cacheSize": 10,
+	"fileName": "trace",
+	"fileExt":  "log",
+	"dirPath": "_LOG",
+	"maxFileSize": 2000000,
+	"bkpTrigger": "MaxFileSize",
+	"maxRecCount": 0,
+	"recTrigger": "Critical",
+	"lineDelimiter": ",\r\n",
+	"openingLine":  "[",
+	"closingLine":  "]",
+	"useGzip": true,
+	"gZipFileExt": "bak"
+}

@@ -1,0 +1,9 @@
+﻿<modularity:ModuleCatalog xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+				 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+				 xmlns:modularity="using:TMS.Common.Modularity">
+	<modularity:ModuleCatalog.Modules>
+		<modularity:ModuleInfo AssemblyPath="Tactilus.Processor.dll"
+					  ModuleClassName="Tactilus.Processor.ModuleManager"
+					  ModuleName="Tactilus.Processor" />
+	</modularity:ModuleCatalog.Modules>
+</modularity:ModuleCatalog>

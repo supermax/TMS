@@ -1,0 +1,54 @@
+﻿{
+	"modules": [
+		{
+			"moduleName": "API",
+			"assemblyPath": "MuGames.Common.Client",
+			"moduleClassName": "MuGames.Common.Client.ModuleManager",
+			"configureIoc": true,
+			"priorityType": "Critical"
+		},
+		{
+			"moduleName": "Config",
+			"assemblyPath": "MuGames.Common.Client.Config",
+			"moduleClassName": "MuGames.Common.Client.Config.ModuleManager",
+			"configureIoc": true,
+			"priorityType": "Critical"
+		},
+		{
+			"moduleName": "Net",
+			"assemblyPath": "MuGames.Common.Client.Net",
+			"moduleClassName": "MuGames.Common.Client.Net.ModuleManager",
+			"configureIoc": true,
+			"priorityType": "Critical"
+		},
+		{
+			"moduleName": "Messaging",
+			"assemblyPath": "MuGames.Common.Client.Messaging",
+			"moduleClassName": "MuGames.Common.Client.Messaging.ModuleManager",
+			"configureIoc": true,
+			"priorityType": "NotCritical"
+		},
+		{
+			"moduleName": "Marketing",
+			"assemblyPath": "MuGames.Common.Client.Marketing",
+			"moduleClassName": "MuGames.Common.Client.Marketing.ModuleManager",
+			"configureIoc": true,
+			"priorityType": "NotCritical"
+		},
+		{
+			"moduleName": "Social",
+			"assemblyPath": "MuGames.Common.Client.Social",
+			"moduleClassName": "MuGames.Common.Client.Social.ModuleManager",
+			"configureIoc": true,
+			"priorityType": "NotCritical"
+		},
+		{
+			"moduleName": "Game",
+			"assemblyPath": "MuGames.Common.Client.Game",
+			"moduleClassName": "MuGames.Common.Client.Game.ModuleManager",
+			"configureIoc": true,
+			"priorityType": "Critical"
+		}
+
+	]
+}

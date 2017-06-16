@@ -1,0 +1,10 @@
+﻿{
+	"enabled":  true,
+	"logTarget": "Console",
+	"logSeverity": "Normal",
+	"timeStampFormat": "T",
+	"autoTimeStamp": true,
+	"msgFormat": "{0}",
+	"cacheEnabled": false,
+	"cacheSize":  0
+}

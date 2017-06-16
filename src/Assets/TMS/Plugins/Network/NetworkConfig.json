@@ -1,0 +1,99 @@
+﻿{
+	"app_id": 2,
+	"app_name": "PokerHive",
+	"app_ver": "1.1",
+	"api_ver": "1.1",
+	"env": 1,
+	"group": "",
+
+	"default": {
+		"name": "",
+		"url": "https:\/\/game.mugames.com",
+		"timeout": 20,
+		"max_retries": 5,
+		"ps": false
+
+	},
+	"services": {
+		"handshake": {
+			"name": "handshake",
+			"url": "https://game.mugames.com/handshake.php",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": false
+
+		},
+		"guestLogin": {
+			"name": "guestLogin",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/guestLogin",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": false
+
+		},
+		"facebookLogin": {
+			"name": "facebookLogin",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/facebookLogin",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": false
+
+		},
+		"getConfiguration": {
+			"name": "getConfiguration",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/getConfiguration",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": true
+
+		},
+		"setConfiguration": {
+			"name": "setConfiguration",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/setConfiguration",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": true
+
+		},
+		"getPlayerData": {
+			"name": "getPlayerData",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/getPlayerData",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": true
+
+		},
+		"setPlayerData": {
+			"name": "setPlayerData",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/setPlayerData",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": true
+
+		},
+		"getProductSet": {
+			"name": "getProductSet",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/getProductSet",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": true
+
+		},
+		"getProducts": {
+			"name": "getProducts",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/getProducts",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": true
+
+		},
+		"purchase": {
+			"name": "purchase",
+			"url": "https:\/\/game.mugames.com\/api.php?r=PokerHive\/1.0\/a\/purchase",
+			"timeout": 20,
+			"max_retries": 5,
+			"ps": true
+
+		}
+	}
+}
