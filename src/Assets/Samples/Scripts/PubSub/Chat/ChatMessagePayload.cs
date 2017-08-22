@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChatMessagePayload
+public class ChatMessagePayload : IMessage
 {
 	public string Message { get; private set; }
 
@@ -13,4 +13,9 @@ public class ChatMessagePayload
 		SenderId = senderId;
 		Message = message;
 	}
+}
+
+public interface IMessage
+{
+	string Message { get; }
 }

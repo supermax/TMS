@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using TMS.Common.Extensions;
+﻿using TMS.Common.Extensions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,6 +12,11 @@ public class ChatManager : BaseManager
 
 	[SerializeField]
 	private InputField _inputText;
+
+	public string InputText
+	{
+		get { return _inputText.text; }
+	}
 
 	protected override void Start()
 	{
@@ -35,9 +37,15 @@ public class ChatManager : BaseManager
 		
 	public override void Subscribe()
 	{
-		Subscribe<ChatMessagePayload>(OnChatMessageReceived, p => p.SenderId != InstanceId);
+		Subscribe<ChatMessagePayload>(OnChatMessageReceived, IsAllowed);
 
 		base.Subscribe();
+	}
+
+	private bool IsAllowed(ChatMessagePayload payload)
+	{
+		var isAllowed = payload.SenderId != InstanceId;
+		return isAllowed;
 	}
 
 	public override void Unsubscribe()
