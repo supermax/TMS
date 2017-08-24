@@ -1,25 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using TMS.Common.Modularity;
 using UnityEngine;
 
-public class Bootsrapper : MonoBehaviour {
+public class Bootsrapper : MonoBehaviour
+{
 
-	// Use this for initialization
-	void Start () {
-		TMS.Common.Modularity.IocManager.Default.Configure(GetType());
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	public IAppContext AppCtxt
+	{
+		get
+		{
+			var a = IocManager.Default.Resolve<IAppContext>();
+			return a;
+		}
 	}
 
 	public IMessagePrinter Printer
 	{
 		get
 		{
-			var printer = TMS.Common.Modularity.IocManager.Default.Resolve<IMessagePrinter>();
+			var printer = IocManager.Default.Resolve<IMessagePrinter>();
 			return printer;
 		}
+	}
+	
+	void Start ()
+	{
+		IocManager.Default.Configure(GetType());
+		
+		IocManager.Default.Register<IAppContext>(typeof(AppContext), true);
 	}
 }

@@ -9,6 +9,7 @@ namespace TMS.Common.Modularity
 	/// <summary>
 	///     IOC Type Mapping Attribute
 	/// </summary>
+	[AttributeUsage(AttributeTargets.Class, AllowMultiple = true)]
 	public class IocTypeMapAttribute : Attribute
 	{
 		/// <summary>
@@ -42,7 +43,7 @@ namespace TMS.Common.Modularity
 		/// </param>
 		public IocTypeMapAttribute(Type interfaceType, bool isSingleton = false, bool isWeakRef = false)
 		{
-			MappingTypes = new[] { interfaceType };
+			MappingTypes = new[] {interfaceType};
 			IsSingleton = isSingleton;
 		}
 

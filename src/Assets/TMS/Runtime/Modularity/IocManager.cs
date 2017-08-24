@@ -26,6 +26,9 @@ namespace TMS.Common.Modularity
 		private readonly IDictionary<Type, IEnumerable<ConstructorInfo>> _typeCtors =
 			new Dictionary<Type, IEnumerable<ConstructorInfo>>();
 
+		private readonly IDictionary<Type, IEnumerable<PropertyInfo>> _typeProps =
+			new Dictionary<Type, IEnumerable<PropertyInfo>>();
+
 		private readonly IDictionary<Type, TypeMappingInfo> _mappings = new Dictionary<Type, TypeMappingInfo>();
 
 		private readonly IList<Assembly> _configuredAssemblies = new List<Assembly>();
@@ -515,6 +518,22 @@ namespace TMS.Common.Modularity
 			return ctors;
 		}
 
+		private IEnumerable<PropertyInfo> GetTypeProperties(Type type)
+		{
+			if (_typeProps.ContainsKey(type))
+			{
+				return _typeProps[type];
+			}
+
+#if !NETFX_CORE
+			var props = type.GetProperties();
+#else
+			var props = type.GetTypeInfo().DeclaredProperties;
+#endif
+			_typeProps[type] = props;
+			return props;
+		}
+
 #if UNITY3D || UNITY_3D
 		private const string RootObjName = "[SINGLETONS]";
 
@@ -589,6 +608,7 @@ namespace TMS.Common.Modularity
 				//Debug.LogFormat("{0} trying to create instance for {1}.", RootObjName, implementationType);
 				var obj = InstanciateMonoBehaviourObject(implementationType, isSingleton);
 				var res = Convert.ChangeType(obj, implementationType);
+				InitProperties(res);
 				return res;
 			}
 			//Debug.LogFormat("trying to create instance for {0}.", implementationType);
@@ -596,14 +616,43 @@ namespace TMS.Common.Modularity
 			var ctors = GetTypeConstructors(implementationType);
 			var ctor = GetMatchingConstructor(ctors, parameters);
 			var instance = CreateInstance(ctor, isSingleton, parameters);
-			if(instance != null) return instance;
+			if (instance != null)
+			{
+				InitProperties(instance);
+				return instance;
+			}
 
 			foreach (var ctor1 in ctors)
 			{
 				instance = CreateInstance(ctor1, isSingleton, parameters);
-				if (instance != null) return instance;
+				if (instance == null) continue;
+
+				InitProperties(instance);
+				return instance;
 			}
 			return null;
+		}
+
+		private void InitProperties(object instance)
+		{
+			if(instance == null) return; // TODO need log?
+
+			var props = GetTypeProperties(instance.GetType());
+			if(props.IsNullOrEmpty()) return;
+
+			foreach (var prop in props)
+			{
+				if(prop == null || !prop.CanWrite) continue;
+
+				var attribs = prop.GetCustomAttributes(typeof(IocDependencyMapAttribute), true);
+				if(attribs.IsNullOrEmpty()) continue;
+
+				var attrib = attribs[0] as IocDependencyMapAttribute;
+				if (attrib == null) continue;
+
+				var propValue = GetImplementationInstance(prop.PropertyType);
+				prop.SetValue(instance, propValue, null);
+			}
 		}
 
 		private object CreateInstance(ConstructorInfo ctor, bool isSingleton, params object[] parameters)

@@ -1,6 +1,11 @@
-﻿#region
+﻿#define UNITY3D
+#region
 
 using TMS.Common.Core;
+
+#if UNITY3D
+using UnityEngine;
+#endif
 
 #endregion
 
@@ -82,5 +87,20 @@ namespace TMS.Common.Helpers
 		{
 			get { return double.NaN; }
 		}
+
+#if UNITY3D
+		private readonly Object _null = null;
+
+		/// <summary>
+		/// Gets the NULL value of <see cref="UnityEngine.Object"/>.
+		/// </summary>
+		/// <value>
+		/// The object null.
+		/// </value>
+		public Object ObjectNull
+		{
+			get { return _null; }
+		}
+#endif
 	}
 }

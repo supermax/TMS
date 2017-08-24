@@ -31,6 +31,8 @@ public class ChatManager : BaseManager
 		if (_inputText.text.IsNullOrEmpty()) return;
 
 		Publish(new ChatMessagePayload(InstanceId, _inputText.text));
+
+		//TMS.Common.Messaging.Messenger.Default.Publish()
 				
 		_inputText.text = string.Empty;
 	}
