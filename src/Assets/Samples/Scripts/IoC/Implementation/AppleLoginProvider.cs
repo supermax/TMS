@@ -1,7 +1,7 @@
 ﻿using System;
 using TMS.Common.Logging;
 
-public class AppleLoginProvider : LoginProvider
+public class AppleLoginProvider : LoginProvider, IPlatformLoginProvider
 {
 	public AppleLoginProvider(IAppContext context) : base(context)
 	{

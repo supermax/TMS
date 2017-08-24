@@ -1,7 +1,7 @@
 ﻿using System;
 using TMS.Common.Logging;
 
-public class GoogleLoginProvider : LoginProvider
+public class GoogleLoginProvider : LoginProvider, IPlatformLoginProvider
 {
 	public GoogleLoginProvider(IAppContext context) : base(context)
 	{

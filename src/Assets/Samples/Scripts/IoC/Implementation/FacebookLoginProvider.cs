@@ -1,6 +1,8 @@
 ﻿using System;
 using TMS.Common.Logging;
+using TMS.Common.Modularity;
 
+[IocTypeMap(typeof(ILoginProvider), true)]
 public class FacebookLoginProvider : LoginProvider
 {
 	public FacebookLoginProvider(IAppContext context) : base(context)

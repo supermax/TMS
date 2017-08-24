@@ -14,6 +14,13 @@ public abstract class LoginProviderButtonAction<T> : GameObjectAction
 		protected set { _loginProviderPayload = value; }
 	}
 
+	protected override void Awake()
+	{
+		base.Awake();
+
+		LoginProviderPayload = new LoginProviderPayload<T>();
+	}
+
 	protected override void DoActionInternal()
 	{
 		base.DoActionInternal();
