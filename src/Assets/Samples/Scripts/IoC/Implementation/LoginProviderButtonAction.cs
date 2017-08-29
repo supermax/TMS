@@ -3,7 +3,7 @@ using TMS.Runtime.Unity.Actions;
 using UnityEngine;
 
 public abstract class LoginProviderButtonAction<T> : GameObjectAction
-	where T : LoginProvider
+	where T : ILoginProvider
 {
 	[SerializeField]
 	private LoginProviderPayload<T> _loginProviderPayload;

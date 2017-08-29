@@ -7,6 +7,11 @@ using TMS.Common.Modularity;
 public class LoginManager : Singleton<ILoginManager, LoginManager>, 
 	ILoginManager, IMessengerConsumer
 {
+	public LoginManager()
+	{
+		//Messenger.Default.Subscribe()
+	}
+
 	public void Subscribe()
 	{
 		Messenger.Default.Subscribe<LoginProviderPayload>(OnLoginRequest);

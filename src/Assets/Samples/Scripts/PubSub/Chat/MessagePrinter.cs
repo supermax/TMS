@@ -6,7 +6,7 @@ using UnityEngine;
 
 [TMS.Common.Modularity.IocTypeMap(typeof(MessagePrinter), 
 	true, InstantiateOnRegistration = true)]
-public class MessagePrinter : TMS.Common.Core.ViewModelSingleton<IMessagePrinter, MessagePrinter>, IMessagePrinter
+public class MessagePrinter : ViewModelSingleton<IMessagePrinter, MessagePrinter>, IMessagePrinter
 {
 	protected override void OnEnable()
 	{

@@ -10,7 +10,7 @@ public abstract class LoginProviderPayload : MessengerActionPayload
 
 [Serializable]
 public class LoginProviderPayload<T> : LoginProviderPayload
-	where T : LoginProvider
+	where T : ILoginProvider
 {
 	public override Type LoginProviderType
 	{

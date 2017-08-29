@@ -3,7 +3,7 @@ using System;
 using TMS.Common.Logging;
 using TMS.Common.Modularity;
 
-[IocTypeMap(typeof(IPlatformLoginProvider), true)]
+[IocTypeMap(typeof(ILoginProvider), true, MapAllInterfaces = true)]
 public class GoogleLoginProvider : LoginProvider, IPlatformLoginProvider
 {
 	public GoogleLoginProvider(IAppContext context) : base(context)

@@ -3,7 +3,7 @@ using System;
 using TMS.Common.Logging;
 using TMS.Common.Modularity;
 
-[IocTypeMap(typeof(IPlatformLoginProvider), true)]
+[IocTypeMap(typeof(ILoginProvider), true)]
 public class AppleLoginProvider : LoginProvider, IPlatformLoginProvider
 {
 	public AppleLoginProvider(IAppContext context) : base(context)
