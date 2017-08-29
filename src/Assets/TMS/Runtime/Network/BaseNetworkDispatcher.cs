@@ -2,6 +2,7 @@
 
 using TMS.Common.Logging;
 using TMS.Common.Extensions;
+using TMS.Common.Logging.Api;
 using TMS.Common.Messaging;
 using TMS.Common.Modularity;
 

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using TMS.Common.Core;
 using TMS.Common.Extensions;
+using TMS.Common.Logging.Api;
 using TMS.Common.Modularity;
 using TMS.Common.Tasks.Threading;
 

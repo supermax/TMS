@@ -16,6 +16,7 @@ using TMS.Common.Properties;
 #endif
 
 using TMS.Common.Helpers;
+using TMS.Common.Logging.Api;
 using TMS.Common.Modularity;
 
 #if UNITY3D

@@ -6,6 +6,7 @@ using TMS.Common.Logging;
 using TMS.Common.Config;
 using System;
 using System.Collections.Generic;
+using TMS.Common.Logging.Api;
 using TMS.Common.Modularity;
 using TMS.Common.Serialization.Json;
 #if UNITY3D

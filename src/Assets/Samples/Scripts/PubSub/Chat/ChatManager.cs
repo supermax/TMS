@@ -1,5 +1,6 @@
 ﻿using TMS.Common.Extensions;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.UI;
 
 public class ChatManager : BaseManager
@@ -16,6 +17,15 @@ public class ChatManager : BaseManager
 	public string InputText
 	{
 		get { return _inputText.text; }
+	}
+
+	protected override void Awake()
+	{
+		base.Awake();
+
+		Assert.IsNotNull(_userNameText, "User Name Text is NULL");
+		Assert.IsNotNull(_chatText, "Chat Text is NULL");
+		Assert.IsNotNull(_inputText, "Input Text is NULL");
 	}
 
 	protected override void Start()

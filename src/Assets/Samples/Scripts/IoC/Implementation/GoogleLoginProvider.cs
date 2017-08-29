@@ -1,6 +1,9 @@
-﻿using System;
+﻿#if UNITY_ANDROID
+using System;
 using TMS.Common.Logging;
+using TMS.Common.Modularity;
 
+[IocTypeMap(typeof(IPlatformLoginProvider), true)]
 public class GoogleLoginProvider : LoginProvider, IPlatformLoginProvider
 {
 	public GoogleLoginProvider(IAppContext context) : base(context)
@@ -18,3 +21,4 @@ public class GoogleLoginProvider : LoginProvider, IPlatformLoginProvider
 		Loggers.Default.ConsoleLogger.Write("{0} -> {1}", GetType(), (Action)Logout);
 	}
 }
+#endif

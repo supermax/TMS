@@ -12,6 +12,7 @@ using System.Threading;
 using TMS.Common.Extensions;
 using TMS.Common.Helpers;
 using TMS.Common.IO.Compression;
+using TMS.Common.Logging.Api;
 
 #endregion
 

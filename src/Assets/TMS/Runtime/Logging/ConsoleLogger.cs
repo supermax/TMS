@@ -4,8 +4,10 @@ using System;
 using System.IO;
 using TMS.Common.Core;
 using TMS.Common.Extensions;
+using TMS.Common.Logging.Api;
 using TMS.Common.Serialization.Json;
 using UnityEngine;
+using ILogger = TMS.Common.Logging.Api.ILogger;
 
 #endregion
 

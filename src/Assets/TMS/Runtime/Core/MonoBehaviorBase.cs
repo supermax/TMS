@@ -2,6 +2,7 @@
 
 using System;
 using TMS.Common.Logging;
+using TMS.Common.Logging.Api;
 using UnityEngine;
 
 #endregion
@@ -21,9 +22,25 @@ namespace TMS.Common.Core
 		/// </value>
 		public virtual bool IsDestroyed { get; protected set; }
 
-	    public LogSeverityType LogSeverity;
+	    [SerializeField] private LogSeverityType _logSeverity;
 
-	    protected virtual void LogMethod(Delegate method)
+		/// <summary>
+		/// Gets or sets the log severity.
+		/// </summary>
+		/// <value>
+		/// The log severity.
+		/// </value>
+		public virtual LogSeverityType LogSeverity
+		{
+			get { return _logSeverity; }
+			set { _logSeverity = value; }
+		}
+
+		/// <summary>
+		/// Logs the method.
+		/// </summary>
+		/// <param name="method">The method.</param>
+		protected virtual void LogMethod(Delegate method)
 	    {
 	        if (LogSeverity == LogSeverityType.Normal)
 	        {
