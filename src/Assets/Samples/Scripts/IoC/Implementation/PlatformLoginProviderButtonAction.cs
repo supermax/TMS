@@ -4,7 +4,7 @@
 #elif UNITY_IOS
 	LoginProviderButtonAction<AppleLoginProvider>
 #else
-	//TODO
+	LoginProviderButtonAction<DummyLoginProvider>
 #endif
 {
 
