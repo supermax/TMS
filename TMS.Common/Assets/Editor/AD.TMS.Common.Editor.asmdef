@@ -1,0 +1,10 @@
+{
+    "name": "TMS.Common.Editor",
+    "references": [
+        "TMS.Common.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

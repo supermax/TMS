@@ -1,0 +1,10 @@
+{
+    "name": "TMS.Common.Plugins.WSA",
+    "references": [
+        "TMS.Common.Runtime"
+    ],
+    "includePlatforms": [
+        "WSA"
+    ],
+    "excludePlatforms": []
+}

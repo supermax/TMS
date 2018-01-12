@@ -22,3 +22,4 @@ sysinfo.txt
 /src/.vs/src/v15/sqlite3/storage.ide
 src/.vscode
 src/.vs/
+*.DotSettings

@@ -1,0 +1,8 @@
+{
+    "name": "TMS.Common.Tests",
+    "references": [
+        "TMS.Common.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

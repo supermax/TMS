@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="_Tests" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Messaging" t="Include">
+              <e p="Chat" t="Include">
+                <e p="ChatManager.cs" t="Include" />
+                <e p="ChatMessagePayload.cs" t="Include" />
+                <e p="ChatMessenging.cs" t="Include" />
+                <e p="ChatSceneManager.cs" t="Include" />
+                <e p="CubeManipulator.cs" t="Include" />
+              </e>
+              <e p="ITestMessenger.cs" t="Include" />
+              <e p="MessengerTest.cs" t="Include" />
+              <e p="TestMessenger.cs" t="Include" />
+              <e p="TestMessengerPayload.cs" t="Include" />
+            </e>
+            <e p="Modularity" t="Include">
+              <e p="IIocTest.cs" t="Include" />
+              <e p="IocManagerConfigurator.cs" t="Include" />
+              <e p="IocManagerTest.cs" t="Include" />
+              <e p="IocTest.cs" t="Include" />
+            </e>
+            <e p="Serialization" t="Include">
+              <e p="Json" t="Include">
+                <e p="JsonDataTest.cs" t="Include" />
+                <e p="JsonMapperTest.cs" t="Include" />
+                <e p="JsonWriterTest.cs" t="Include" />
+                <e p="TestClasses" t="Include">
+                  <e p="BaseDataObj.cs" t="Include" />
+                  <e p="BasicLevelInfoObj.cs" t="Include" />
+                  <e p="BasicUserDataObj.cs" t="Include" />
+                  <e p="Empire.cs" t="Include" />
+                  <e p="FileResources.cs" t="Include" />
+                  <e p="JsonClass.cs" t="Include" />
+                  <e p="Level.cs" t="Include" />
+                  <e p="LevelBonusObj.cs" t="Include" />
+                  <e p="LevelInfoObj.cs" t="Include" />
+                  <e p="MachineObj.cs" t="Include" />
+                  <e p="MachinesObj.cs" t="Include" />
+                  <e p="NetworkConfig.cs" t="Include" />
+                  <e p="PrizeObj.cs" t="Include" />
+                  <e p="SpinResultObj.cs" t="Include" />
+                  <e p="StringResources.cs" t="Include" />
+                  <e p="TestClasses.cs" t="Include" />
+                  <e p="UserCurrencyObj.cs" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="Tasks" t="Include">
+              <e p="DispatcherProxyTest.cs" t="Include" />
+              <e p="ThreadHelperTest.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Editor" t="Include">
+          <e p="Core" t="Include">
+            <e p="DelegateCommandInspector.cs" t="Include" />
+          </e>
+          <e p="Helpers" t="Include">
+            <e p="PluginsUpdater.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AppManager" t="Include">
+            <e p="AppInstanceCallbackEventArgs.cs" t="Include" />
+            <e p="AppInstanceManager.cs" t="Include" />
+            <e p="AppInstanceScope.cs" t="Include" />
+          </e>
+          <e p="Cache" t="Include">
+            <e p="DictionaryCache.cs" t="Include" />
+          </e>
+          <e p="Config" t="Include">
+            <e p="BaseConfiguration.cs" t="Include" />
+            <e p="IBaseConfiguration.cs" t="Include" />
+          </e>
+          <e p="Converters" t="Include">
+            <e p="BooleanToOpacityConverter.cs" t="Include" />
+            <e p="CountProvider.cs" t="Include" />
+            <e p="DummyValueConverter.cs" t="Include" />
+            <e p="IValueConverter.cs" t="Include" />
+            <e p="PropertyPathConverter.cs" t="Include" />
+            <e p="ScalarValueConverter.cs" t="Include" />
+            <e p="StringFormatConverter.cs" t="Include" />
+            <e p="ViewModelToViewConverter.cs" t="Include" />
+          </e>
+          <e p="Core" t="Include">
+            <e p="Api" t="Include">
+              <e p="IActiveAware.cs" t="Include" />
+              <e p="ICommand.cs" t="Include" />
+              <e p="IInputDispatcher.cs" t="Include" />
+              <e p="IInputListener.cs" t="Include" />
+              <e p="IMapContainer.cs" t="Include" />
+              <e p="INotifyCollectionChanged.cs" t="Include" />
+              <e p="IObservable.cs" t="Include" />
+              <e p="IView.cs" t="Include" />
+              <e p="IViewModel.cs" t="Include" />
+              <e p="IWeakDelegate.cs" t="Include" />
+            </e>
+            <e p="Delegates" t="Include">
+              <e p="DelegatePayloadBase.cs" t="Include" />
+              <e p="DelegateReference.cs" t="Include" />
+              <e p="WeakDelegatesManager.cs" t="Include" />
+            </e>
+            <e p="Mvvm" t="Include">
+              <e p="DelegateCommand.cs" t="Include" />
+              <e p="Observable.cs" t="Include" />
+              <e p="ObservableCollectionEx.cs" t="Include" />
+              <e p="ObservableDictionary.cs" t="Include" />
+              <e p="ObservableSingleton.cs" t="Include" />
+              <e p="ObservableSortedDictionary.cs" t="Include" />
+              <e p="ViewModel.cs" t="Include" />
+              <e p="ViewModelLocator.cs" t="Include" />
+              <e p="ViewModelSingleton.cs" t="Include" />
+              <e p="ViewModelSingletonT.cs" t="Include" />
+            </e>
+            <e p="Singleton.cs" t="Include" />
+            <e p="SingletonT.cs" t="Include" />
+            <e p="Tuple.cs" t="Include" />
+            <e p="Unity" t="Include">
+              <e p="ElementStateManager.cs" t="Include" />
+              <e p="InputBlockDelegateCommand.cs" t="Include" />
+              <e p="InputDispatcher.cs" t="Include" />
+              <e p="MonoBehaviorBase.cs" t="Include" />
+              <e p="MonoBehaviorBaseSingleton.cs" t="Include" />
+              <e p="MonoBehaviorBaseSingletonT.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Cryptography" t="Include">
+            <e p="ABCDStruct.cs" t="Include" />
+            <e p="Crc32.cs" t="Include" />
+            <e p="MD5Core.cs" t="Include" />
+            <e p="MD5Managed.cs" t="Include" />
+          </e>
+          <e p="EventArguments" t="Include">
+            <e p="GenericEventArgs.cs" t="Include" />
+            <e p="InputEventArgs.cs" t="Include" />
+            <e p="InputTypes.cs" t="Include" />
+          </e>
+          <e p="Extensions" t="Include">
+            <e p="ActionExtensions.cs" t="Include" />
+            <e p="ArgumentValidator.cs" t="Include" />
+            <e p="CollectionExtensions.cs" t="Include" />
+            <e p="CommonExtensions.cs" t="Include" />
+            <e p="CustomTaskExtensions.cs" t="Include" />
+            <e p="DateTimeExtensions.cs" t="Include" />
+            <e p="DelegateExtensions.cs" t="Include" />
+            <e p="EnumerableExtensions.cs" t="Include" />
+            <e p="EnumeratorExtensions.cs" t="Include" />
+            <e p="GameObjectExtensions.cs" t="Include" />
+            <e p="MonoBehaviourExtensions.cs" t="Include" />
+            <e p="ObjectExtensions.cs" t="Include" />
+            <e p="StoryboardExtensions.cs" t="Include" />
+            <e p="TypeExtensions.cs" t="Include" />
+            <e p="UriExtensions.cs" t="Include" />
+            <e p="WaitOneExtensions.cs" t="Include" />
+          </e>
+          <e p="Helpers" t="Include">
+            <e p="AnimationHelper.cs" t="Include" />
+            <e p="AssemblyInfoHelper.cs" t="Include" />
+            <e p="DataMapper.cs" t="Include" />
+            <e p="DefaultValues.cs" t="Include" />
+            <e p="DeviceInfo.cs" t="Include" />
+            <e p="EasingFunctions.cs" t="Include" />
+            <e p="EnumHelper.cs" t="Include" />
+            <e p="ILocalStorage.cs" t="Include" />
+            <e p="InputState.cs" t="Include" />
+            <e p="IOHelper.cs" t="Include" />
+            <e p="IWebView.cs" t="Include" />
+            <e p="LocalStorage.cs" t="Include" />
+            <e p="LoggerHelper.cs" t="Include" />
+            <e p="NullableProvider.cs" t="Include" />
+            <e p="ResourceItemsRandomizer.cs" t="Include" />
+            <e p="UriUtils.cs" t="Include" />
+            <e p="WebViewWrapper.cs" t="Include" />
+            <e p="WindowSize.cs" t="Include" />
+            <e p="XmlHelper.cs" t="Include" />
+          </e>
+          <e p="Imaging" t="Include">
+            <e p="AssetsPostprocessHandler.cs" t="Include" />
+            <e p="ImageFormatHelper.cs" t="Include" />
+            <e p="ImageHelper.cs" t="Include" />
+            <e p="Lanczos.cs" t="Include" />
+            <e p="ScaleImage.cs" t="Include" />
+            <e p="ScaleUnityTexture.cs" t="Include" />
+            <e p="SColor.cs" t="Include" />
+            <e p="ScreenshotHelper.cs" t="Include" />
+          </e>
+          <e p="IO" t="Include">
+            <e p="Compression" t="Include">
+              <e p="GZipHelper.cs" t="Include" />
+              <e p="Unity.IO.Compression" t="Include">
+                <e p="BlockType.cs" t="Include" />
+                <e p="CompressionMode.cs" t="Include" />
+                <e p="CopyEncoder.cs" t="Include" />
+                <e p="Crc32Helper.cs" t="Include" />
+                <e p="DeflateInput.cs" t="Include" />
+                <e p="DeflaterManaged.cs" t="Include" />
+                <e p="DeflateStream.cs" t="Include" />
+                <e p="DeflateStreamAsyncResult.cs" t="Include" />
+                <e p="FastEncoder.cs" t="Include" />
+                <e p="FastEncoderStatics.cs" t="Include" />
+                <e p="FastEncoderWindow.cs" t="Include" />
+                <e p="FileFormats.cs" t="Include" />
+                <e p="GZipDecoder.cs" t="Include" />
+                <e p="GZipStream.cs" t="Include" />
+                <e p="GZipUtils.cs" t="Include" />
+                <e p="HuffmanTree.cs" t="Include" />
+                <e p="IDeflater.cs" t="Include" />
+                <e p="Inflater.cs" t="Include" />
+                <e p="InflaterState.cs" t="Include" />
+                <e p="InputBuffer.cs" t="Include" />
+                <e p="InvalidDataException.cs" t="Include" />
+                <e p="Match.cs" t="Include" />
+                <e p="MatchState.cs" t="Include" />
+                <e p="OutputBuffer.cs" t="Include" />
+                <e p="OutputWindow.cs" t="Include" />
+                <e p="SR.cs" t="Include" />
+              </e>
+            </e>
+            <e p="TextFileHandler.cs" t="Include" />
+          </e>
+          <e p="Logging" t="Include">
+            <e p="Api" t="Include">
+              <e p="FileBackupTriggerType.cs" t="Include" />
+              <e p="FileLoggerAction.cs" t="Include" />
+              <e p="FileLoggerCallbackArgs.cs" t="Include" />
+              <e p="FileLoggerResult.cs" t="Include" />
+              <e p="FileLoggerSettings.cs" t="Include" />
+              <e p="FileRecordWriteTriggerType.cs" t="Include" />
+              <e p="FileSendTriggerType.cs" t="Include" />
+              <e p="IConsoleLogger.cs" t="Include" />
+              <e p="IFileLogger.cs" t="Include" />
+              <e p="ILoggers.cs" t="Include" />
+              <e p="IRemoteFileLogger.cs" t="Include" />
+              <e p="LoggerSettings.cs" t="Include" />
+              <e p="LogRecord.cs" t="Include" />
+              <e p="LogRecordFormat.cs" t="Include" />
+              <e p="LogSeverityType.cs" t="Include" />
+              <e p="LogSourceType.cs" t="Include" />
+              <e p="LogTargetType.cs" t="Include" />
+              <e p="RemoteFileLoggerSettings.cs" t="Include" />
+            </e>
+            <e p="BaseLogger.cs" t="Include" />
+            <e p="ConsoleLogger.cs" t="Include" />
+            <e p="FileLogger.cs" t="Include" />
+            <e p="ILogger.cs" t="Include" />
+            <e p="Loggers.cs" t="Include" />
+            <e p="LogSystemInfo.cs" t="Include" />
+          </e>
+          <e p="Messaging" t="Include">
+            <e p="IBroadcastPayload.cs" t="Include" />
+            <e p="IMessenger.cs" t="Include" />
+            <e p="IMessengerConsumer.cs" t="Include" />
+            <e p="Messenger.cs" t="Include" />
+            <e p="MessengerConsumerAttribute.cs" t="Include" />
+          </e>
+          <e p="Modularity" t="Include">
+            <e p="Boot" t="Include">
+              <e p="Api" t="Include">
+                <e p="IBootstrapper.cs" t="Include" />
+                <e p="IBootstrapperT.cs" t="Include" />
+                <e p="IModule.cs" t="Include" />
+              </e>
+              <e p="Bootstrapper.cs" t="Include" />
+              <e p="ModuleCatalog.cs" t="Include" />
+              <e p="ModuleInfo.cs" t="Include" />
+            </e>
+            <e p="Ioc" t="Include">
+              <e p="Api" t="Include">
+                <e p="IIocManager.cs" t="Include" />
+              </e>
+              <e p="Config" t="Include">
+                <e p="MappingInfo.cs" t="Include" />
+                <e p="TypeMappingInfo.cs" t="Include" />
+              </e>
+              <e p="IocDependencyMapAttribute.cs" t="Include" />
+              <e p="IocHelper.cs" t="Include" />
+              <e p="IocManager.cs" t="Include" />
+              <e p="IocTypeMapAttribute.cs" t="Include" />
+            </e>
+            <e p="Regions" t="Include">
+              <e p="Adapters" t="Include">
+                <e p="BaseRegionAdapter.cs" t="Include" />
+                <e p="MultiContentRegionAdapter.cs" t="Include" />
+                <e p="RegionAdapterHelper.cs" t="Include" />
+                <e p="RegionViewWrapper.cs" t="Include" />
+                <e p="SingleContentRegionAdapter.cs" t="Include" />
+              </e>
+              <e p="Api" t="Include">
+                <e p="IRegion.cs" t="Include" />
+                <e p="IRegionAdapter.cs" t="Include" />
+                <e p="IRegionManager.cs" t="Include" />
+                <e p="IViewMapping.cs" t="Include" />
+              </e>
+              <e p="Region" t="Include">
+                <e p="RegionMapping.cs" t="Include" />
+                <e p="RegionMappingType.cs" t="Include" />
+                <e p="RegionViewMappingPayload.cs" t="Include" />
+                <e p="RegionViewMappingType.cs" t="Include" />
+              </e>
+              <e p="View" t="Include">
+                <e p="ViewMapping.cs" t="Include" />
+                <e p="ViewMappingActionAttribute.cs" t="Include" />
+                <e p="ViewMappingAttribute.cs" t="Include" />
+              </e>
+              <e p="ViewRegionManager.cs" t="Include" />
+            </e>
+            <e p="Unity" t="Include">
+              <e p="SingletonsListComponent.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Network" t="Include">
+            <e p="Api" t="Include">
+              <e p="BaseNetworkServiceConfiguration.cs" t="Include" />
+              <e p="BaseServicePayload.cs" t="Include" />
+              <e p="BaseServiceResponsePayload.cs" t="Include" />
+              <e p="IServiceFactory.cs" t="Include" />
+              <e p="IServiceHandler.cs" t="Include" />
+              <e p="IServicePayload.cs" t="Include" />
+              <e p="ServicePayloadMapping.cs" t="Include" />
+            </e>
+            <e p="Config" t="Include">
+              <e p="Api" t="Include">
+                <e p="BaseServiceConfiguration.cs" t="Include" />
+                <e p="INetworkConfiguration.cs" t="Include" />
+                <e p="NetworkConfiguration.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Dispatcher" t="Include">
+              <e p="Api" t="Include">
+                <e p="INetworkDispatcherConfiguration.cs" t="Include" />
+                <e p="NetworkDispatcherConfiguration.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Request" t="Include">
+              <e p="Api" t="Include">
+                <e p="BaseServiceRequestPayload.cs" t="Include" />
+                <e p="IServiceRequestPayload.cs" t="Include" />
+                <e p="IServiceRequestPayloadT.cs" t="Include" />
+                <e p="IServiceRequestTask.cs" t="Include" />
+                <e p="NetworkRequestConfiguration.cs" t="Include" />
+                <e p="NetworkRequestConfigurationData.cs" t="Include" />
+                <e p="ServiceRequestCacheResendTrigger.cs" t="Include" />
+                <e p="ServiceRequestCacheType.cs" t="Include" />
+                <e p="ServiceRequestPayload.cs" t="Include" />
+                <e p="ServiceRequestType.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Response" t="Include">
+              <e p="Api" t="Include">
+                <e p="BaseServiceResponsePayload.cs" t="Include" />
+                <e p="IServiceResponsePayload.cs" t="Include" />
+                <e p="IServiceResponsePayloadT.cs" t="Include" />
+                <e p="ResponsePayloadDataType.cs" t="Include" />
+                <e p="ServiceResponsePayload.cs" t="Include" />
+                <e p="ServiceResponseState.cs" t="Include" />
+              </e>
+              <e p="NetworkResponseConfiguration.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Properties" t="Include">
+            <e p="Resources.cs" t="Include" />
+          </e>
+          <e p="Serialization" t="Include">
+            <e p="IsolatedStorageHelper.cs" t="Include" />
+            <e p="Json" t="Include">
+              <e p="ArrayMetadata.cs" t="Include" />
+              <e p="Condition.cs" t="Include" />
+              <e p="Delegates.cs" t="Include" />
+              <e p="FsmContext.cs" t="Include" />
+              <e p="IJsonSerializable.cs" t="Include" />
+              <e p="IJsonWrapper.cs" t="Include" />
+              <e p="JsonData.cs" t="Include" />
+              <e p="JsonDataContractAttribute.cs" t="Include" />
+              <e p="JsonDataMember.cs" t="Include" />
+              <e p="JsonException.cs" t="Include" />
+              <e p="JsonMapper.cs" t="Include" />
+              <e p="JsonReader.cs" t="Include" />
+              <e p="JsonToken.cs" t="Include" />
+              <e p="JsonType.cs" t="Include" />
+              <e p="JsonWriter.cs" t="Include" />
+              <e p="Lexer.cs" t="Include" />
+              <e p="ObjectMetadata.cs" t="Include" />
+              <e p="OrderedDictionaryEnumerator.cs" t="Include" />
+              <e p="ParserToken.cs" t="Include" />
+              <e p="PropertyMetadata.cs" t="Include" />
+              <e p="WriterContext.cs" t="Include" />
+            </e>
+            <e p="ObjectSerializer.cs" t="Include" />
+          </e>
+          <e p="Tasks" t="Include">
+            <e p="Delay" t="Include">
+              <e p="TaskDelayItem.cs" t="Include" />
+              <e p="TaskDelayManager.cs" t="Include" />
+            </e>
+            <e p="Threading" t="Include">
+              <e p="ActionThread.cs" t="Include" />
+              <e p="Channel.cs" t="Include" />
+              <e p="CustomTask.cs" t="Include" />
+              <e p="CustomTaskDispatcher.cs" t="Include" />
+              <e p="CustomTaskDispatcherBase.cs" t="Include" />
+              <e p="CustomTaskT.cs" t="Include" />
+              <e p="CustomThread.cs" t="Include" />
+              <e p="EnumeratableActionThread.cs" t="Include" />
+              <e p="IThreadHelper.cs" t="Include" />
+              <e p="NullDispatcher.cs" t="Include" />
+              <e p="SwitchTo.cs" t="Include" />
+              <e p="TaskDistributer.cs" t="Include" />
+              <e p="TaskEndedEventHandler.cs" t="Include" />
+              <e p="TaskSortingSystem.cs" t="Include" />
+              <e p="TaskWorker.cs" t="Include" />
+              <e p="ThreadHelper.cs" t="Include" />
+              <e p="ThreadingExtensions.cs" t="Include" />
+              <e p="TickThread.cs" t="Include" />
+            </e>
+            <e p="Timeout" t="Include">
+              <e p="ITimeoutDelegateManager.cs" t="Include" />
+              <e p="TimeoutDelegateCancelPayload.cs" t="Include" />
+              <e p="TimeoutDelegateManager.cs" t="Include" />
+              <e p="TimeoutDelegatePayload.cs" t="Include" />
+              <e p="UnityTimer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Unity" t="Include">
+            <e p="Actions" t="Include">
+              <e p="AnimatorAction.cs" t="Include" />
+              <e p="AudioSourceAction.cs" t="Include" />
+              <e p="ComponentAction.cs" t="Include" />
+              <e p="ComponentStateChangeObserver.cs" t="Include" />
+              <e p="ComponentStateChangePayload.cs" t="Include" />
+              <e p="ComponentStateType.cs" t="Include" />
+              <e p="GameObjectAction.cs" t="Include" />
+              <e p="GameObjectActionToggle.cs" t="Include" />
+              <e p="GameObjectActionTrigger.cs" t="Include" />
+              <e p="GameObjectActionType.cs" t="Include" />
+              <e p="GameObjectTransformAction.cs" t="Include" />
+              <e p="InputButtonHelper.cs" t="Include" />
+              <e p="InputButtonTrigger.cs" t="Include" />
+              <e p="MessengerAction.cs" t="Include" />
+              <e p="MessengerActionPayload.cs" t="Include" />
+            </e>
+            <e p="Helpers" t="Include">
+              <e p="ResourceLoader.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="TMS.Common.Editor.csproj" t="IncludeRecursive" />
+      <e p="TMS.Common.Runtime.csproj" t="IncludeRecursive" />
+      <e p="TMS.Common.sln" t="IncludeFlat" />
+      <e p="TMS.Common.Tests.csproj" t="IncludeRecursive" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_TMS.Common.1703634177.00" t="ExcludeRecursive" />
+  </component>
+</project>

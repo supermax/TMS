@@ -1,0 +1,8 @@
+{
+    "name": "TMS.Common.Plugins.iOS",
+    "references": [],
+    "includePlatforms": [
+        "iOS"
+    ],
+    "excludePlatforms": []
+}

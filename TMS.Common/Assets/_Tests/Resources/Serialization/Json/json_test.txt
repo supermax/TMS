@@ -1,0 +1,17 @@
+{
+	"id": "100003333007032",
+	"name": "Gil Plane",
+	"first_name": "Gil",
+	"last_name": "Plane",
+	"link": "https:\/\/www.facebook.com\/gil.plane",
+	"username": "gil.plane",
+	"birthday": "01\/29\/1983",
+	"favorite_athletes": [{
+		"id": "29756652821",
+		"name": "Muhammad Ali"
+	}],
+	"gender": "male",
+	"timezone": 2,
+	"locale": "en_US",
+	"updated_time": "2012-07-27T09:11:33+0000"
+}

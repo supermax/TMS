@@ -1,0 +1,192 @@
+{
+	"defaultConfig": {
+	  "name": "",
+	  "server": "",
+	  "service_path": "",
+	  "timeout": 20,
+	  "max_retries": 5,
+	  "is_post": false,
+	  "suppress_errors": [ ],
+	  "suppress_all": false,
+	  "lock_on_error": false
+	},
+
+	"services": {
+
+	  "balance": {
+		"server": "vc",
+		"service_path": "secured/activity/balance.rest?"
+	  },
+	  "oepnPaymentTrans": {
+		"server": "payment",
+		"service_path": "secured/payment/open.rest?"
+	  },
+	  "cancelPaymentTrans": {
+		"server": "payment",
+		"service_path": "secured/payment/cancel.rest?"
+	  },
+	  "commitPaymentTrans": {
+		"server": "payment",
+		"service_path": "secured/payment/commit.rest?"
+	  },
+
+	  "login": {
+		"server": "id",
+		"service_path": "login.rest"
+	  },
+	  "logout": {
+		"server": "id",
+		"service_path": "logout.rest"
+	  },
+	  "autoregister": {
+		"server": "id",
+		"service_path": "user/autoregister.rest"
+	  },
+	  "registeruid": {
+		"server": "id",
+		"service_path": "user/registeruid.rest"
+	  },
+
+	  "getEmpire": {
+		"server": "gm",
+		"service_path": "secured/server/getempire.rest?"
+	  },
+	  "make": {
+		"server": "gm",
+		"service_path": "secured/server/mk.rest?"
+	  },
+	  "makeAbort": {
+		"server": "gm",
+		"service_path": "secured/server/make_abort.rest?"
+	  },
+	  "createConstruction": {
+		"server": "gm",
+		"service_path": "secured/server/createconstruction.rest?"
+	  },
+	  "upgradeConstruction": {
+		"server": "gm",
+		"service_path": "secured/server/upgradeconstruction.rest?"
+	  },
+	  "degradeConstruction": {
+		"server": "gm",
+		"service_path": "secured/server/degrade_construction.rest?"
+	  },
+	  "publicInfo": {
+		"server": "gm",
+		"service_path": "/public/node/display_info.rest?"
+	  },
+	  "moveHeroItem": {
+		"server": "gm",
+		"service_path": "/secured/move.rest?"
+	  },
+	  "updateEmpireInfo": {
+		"server": "gm",
+		"service_path": "secured/server/node/update.rest?"
+	  },
+	  "claimQuest": {
+		"server": "gm",
+		"service_path": "secured/server/quest.rest?"
+	  },
+	  "scoutInfo": {
+		"server": "gm",
+		"service_path": "secured/spy/info.rest?"
+	  },
+	  "sendResources": {
+		"server": "gm",
+		"service_path": "secured/send.rest?"
+	  },
+	  "troopMovement": {
+		"server": "gm",
+		"service_path": "secured/server/troop_transfer.rest?",
+		"suppress_errors": [ 314, 202, 399, 311 ]
+	  },
+	  "getHelpRequests": {
+		"server": "gm",
+		"service_path": "secured/node/info.rest?",
+		"suppress_errors": [ 311 ]
+	  },
+	  "getSiegeParticipants": {
+		"server": "gm",
+		"service_path": "secured/node/info.rest?"
+	  },
+
+	  "getReports": {
+		"server": "com",
+		"service_path": "reports/page.rest?",
+		"suppress_errors": [ -1 ]
+	  },
+	  "getSharedReport": {
+		"server": "com",
+		"service_path": "reports/shared.rest?"
+	  },
+	  "readReport": {
+		"server": "com",
+		"service_path": "reports/read.rest"
+	  },
+
+	  "councilSendVote": {
+		"server": "arena",
+		"service_path": "/campaigns/vote.rest?"
+	  },
+	  "councilGetActive": {
+		"server": "arena",
+		"service_path": "/campaigns/active.rest?"
+	  },
+	  "councilGetClosed": {
+		"server": "arena",
+		"service_path": "/campaigns/closed.rest?"
+	  },
+
+	  "leaderboardAllianceList": {
+		"server": "hs",
+		"service_path": "alliance_list.rest"
+	  },
+	  "leaderboardPlayersList": {
+		"server": "hs",
+		"service_path": "list.rest"
+	  },
+	  "leaderboardGetRank": {
+		"server": "hs",
+		"service_path": "pos.rest",
+		"suppress_errors": [ -2 ]
+	  },
+
+	  "reportLog": {
+		"server": "log",
+		"service_path": "report"
+	  },
+
+	  "biLog": {
+		"server": "log",
+		"service_path": "bi/client"
+	  },
+
+	  "getRules": {
+		"server": "rules",
+		"service_path": ""
+	  },
+
+	  "getOPM": {
+		"server": "ix",
+		"service_path": "rules/lang/get"
+	  },
+	  "getLocalizationList": {
+		"server": "ix",
+		"service_path": ""
+	  },
+	  "getVcPackages": {
+		"server": "ix",
+		"service_path": "rewards/vc/get.rest?",
+		"suppress_errors": [ -1, -2, 404, 500, 502, 503, 504 ]
+	  },
+	  "useRedeem": {
+		"server": "ix",
+		"service_path": "redeems/code/use.rest?",
+		"suppress_errors": [ 1, 2, 3, 4, 9, -30 ]
+	  },
+	  "changeWorldGetRules": {
+		"server": "ix",
+		"service_path": "rest/user_worlds/move"
+	  }
+	}
+}

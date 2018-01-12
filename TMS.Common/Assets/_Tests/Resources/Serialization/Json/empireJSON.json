@@ -1,0 +1,877 @@
+{
+  "uid": "E:tal",
+  "id": 3730,
+  "pwr": 682,
+  "ear": 2,
+  "nick": "Lord3730",
+  "created": 1425569171911,
+  "name": "tal",
+  "loc": null,
+  "badge": null,
+  "cpl": 0,
+  "edr": 1000,
+  "push": false,
+  "intro": "Introduction",
+  "alliance": "H2O",
+  "reward_alliance": 1000,
+  "allianceName": "HerdsTerror2",
+  "avtr": "6",
+  "allianceId": 1313,
+  "Hero": {
+    "uid": "E:tal/A:2110",
+    "id": 2110,
+    "typeId": 2110,
+    "lvl": 1,
+    "name": "Archangel",
+    "state": 0,
+    "loc": 281563,
+    "hero_xp": {
+      "uid": "E:tal/H/A:3412",
+      "id": 3412,
+      "typeId": 3412,
+      "qty": 5800
+    },
+    "hero_skill_point": {
+      "uid": "E:tal/H/A:3413",
+      "typeId": 3413,
+      "qty": 1
+    },
+    "hskill_gathering_1": {
+      "uid": "E:tal/H/A:62112",
+      "typeId": 62112,
+      "lvl": 15
+    },
+    "weapon": {
+      "arti_weapon_1": {
+        "uid": "E:tal/H/A:64601",
+        "typeId": 64601
+      }
+    },
+    "accessory": {
+      "arti_access_1": {
+        "uid": "E:tal/H/A:64301",
+        "typeId": 64301
+      }
+    }
+  },
+  "HeroBag": {
+    "uid": "E:tal/A:2115",
+    "id": 2115,
+    "typeId": 2115
+  },
+  "Island": {
+    "0": {
+      "uid": "E:tal/C:0",
+      "id": 0,
+      "typeId": 2300,
+      "time": 1449845277409,
+      "zon": 0,
+      "name": "Axius",
+      "loc": 202670,
+      "resource": {
+        "crops": {
+          "uid": "E:tal/C:0/AA:3401",
+          "typeId": 3401,
+          "qty": 24717,
+          "cap": 15600,
+          "due": 1449821869952
+        },
+        "stone": {
+          "uid": "E:tal/C:0/AA:3402",
+          "typeId": 3402,
+          "qty": 23443,
+          "cap": 10000
+        },
+        "spirit": {
+          "uid": "E:tal/C:0/AA:3403",
+          "typeId": 3403,
+          "qty": 27295,
+          "cap": 11790,
+          "due": 1449821868656
+        },
+        "alloy": {
+          "uid": "E:tal/C:0/AA:3404",
+          "typeId": 3404,
+          "qty": 0,
+          "cap": 1000
+        },
+        "flame": {
+          "uid": "E:tal/C:0/AA:3405",
+          "typeId": 3405,
+          "qty": 0,
+          "cap": 1000
+        },
+        "mist": {
+          "uid": "E:tal/C:0/AA:3406",
+          "typeId": 3406,
+          "qty": 0,
+          "cap": 1000
+        },
+        "void": {
+          "uid": "E:tal/C:0/AA:3407",
+          "typeId": 3407,
+          "qty": 0,
+          "cap": 1000
+        },
+        "army_camp": {
+          "uid": "E:tal/C:0/AA:3414",
+          "typeId": 3414,
+          "qty": 0,
+          "cap": 10000
+        },
+        "hero_trainer": {
+          "uid": "E:tal/C:0/AA:3415",
+          "typeId": 3415,
+          "qty": 0,
+          "cap": 10000
+        }
+      },
+      "slots": {
+        "0": {
+          "uid": "E:tal/C:0/SLOT:0",
+          "id": 0,
+          "typeId": 4000,
+          "lvl": 2
+        },
+        "1": {
+          "uid": "E:tal/C:0/SLOT:1",
+          "id": 1,
+          "typeId": 4005,
+          "lvl": 1
+        },
+        "2": {
+          "uid": "E:tal/C:0/SLOT:2",
+          "id": 2,
+          "typeId": 4001,
+          "lvl": 1
+        },
+        "3": {
+          "uid": "E:tal/C:0/SLOT:3",
+          "id": 3,
+          "typeId": 4061,
+          "lvl": 14,
+          "state": 1,
+          "due": 1458092666664
+        },
+        "4": {
+          "uid": "E:tal/C:0/SLOT:4",
+          "id": 4,
+          "typeId": 4055,
+          "lvl": 1
+        },
+        "5": {
+          "uid": "E:tal/C:0/SLOT:5",
+          "id": 5,
+          "typeId": 4015,
+          "lvl": 1
+        },
+        "6": {
+          "uid": "E:tal/C:0/SLOT:6",
+          "id": 6,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "7": {
+          "uid": "E:tal/C:0/SLOT:7",
+          "id": 7,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "8": {
+          "uid": "E:tal/C:0/SLOT:8",
+          "id": 8,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "9": {
+          "uid": "E:tal/C:0/SLOT:9",
+          "id": 9,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "10": {
+          "uid": "E:tal/C:0/SLOT:10",
+          "id": 10,
+          "typeId": 4103,
+          "lvl": 1
+        },
+        "11": {
+          "uid": "E:tal/C:0/SLOT:11",
+          "id": 11,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "12": {
+          "uid": "E:tal/C:0/SLOT:12",
+          "id": 12,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "13": {
+          "uid": "E:tal/C:0/SLOT:13",
+          "id": 13,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "14": {
+          "uid": "E:tal/C:0/SLOT:14",
+          "id": 14,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "15": {
+          "uid": "E:tal/C:0/SLOT:15",
+          "id": 15,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "16": {
+          "uid": "E:tal/C:0/SLOT:16",
+          "id": 16,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "17": {
+          "uid": "E:tal/C:0/SLOT:17",
+          "id": 17,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "18": {
+          "uid": "E:tal/C:0/SLOT:18",
+          "id": 18,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "19": {
+          "uid": "E:tal/C:0/SLOT:19",
+          "id": 19,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "20": {
+          "uid": "E:tal/C:0/SLOT:20",
+          "id": 20,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "21": {
+          "uid": "E:tal/C:0/SLOT:21",
+          "id": 21,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "22": {
+          "uid": "E:tal/C:0/SLOT:22",
+          "id": 22,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "23": {
+          "uid": "E:tal/C:0/SLOT:23",
+          "id": 23,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "24": {
+          "uid": "E:tal/C:0/SLOT:24",
+          "id": 24,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "25": {
+          "uid": "E:tal/C:0/SLOT:25",
+          "id": 25,
+          "typeId": 4201,
+          "lvl": 1
+        },
+        "26": {
+          "uid": "E:tal/C:0/SLOT:26",
+          "id": 26,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "27": {
+          "uid": "E:tal/C:0/SLOT:27",
+          "id": 27,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "28": {
+          "uid": "E:tal/C:0/SLOT:28",
+          "id": 28,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "29": {
+          "uid": "E:tal/C:0/SLOT:29",
+          "id": 29,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "30": {
+          "uid": "E:tal/C:0/SLOT:30",
+          "id": 30,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "31": {
+          "uid": "E:tal/C:0/SLOT:31",
+          "id": 31,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "32": {
+          "uid": "E:tal/C:0/SLOT:32",
+          "id": 32,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "33": {
+          "uid": "E:tal/C:0/SLOT:32",
+          "id": 33,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "34": {
+          "uid": "E:tal/C:0/SLOT:34",
+          "id": 34,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "35": {
+          "uid": "E:tal/C:0/SLOT:35",
+          "id": 35,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "36": {
+          "uid": "E:tal/C:0/SLOT:36",
+          "id": 36,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "37": {
+          "uid": "E:tal/C:0/SLOT:37",
+          "id": 37,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "38": {
+          "uid": "E:tal/C:0/SLOT:38",
+          "id": 38,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "39": {
+          "uid": "E:tal/C:0/SLOT:39",
+          "id": 39,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "40": {
+          "uid": "E:tal/C:0/SLOT:40",
+          "id": 40,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "41": {
+          "uid": "E:tal/C:0/SLOT:41",
+          "id": 41,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "42": {
+          "uid": "E:tal/C:0/SLOT:42",
+          "id": 42,
+          "typeId": 4900,
+          "lvl": 1
+        },
+        "43": {
+          "uid": "E:tal/C:0/SLOT:43",
+          "id": 43,
+          "typeId": 4020,
+          "lvl": 1
+        },
+        "44": {
+          "uid": "E:tal/C:0/SLOT:44",
+          "id": 44,
+          "typeId": 4025,
+          "lvl": 1
+        }
+      },
+      "missions_renewer": {
+        "uid": "E:tal/C:0/A:6915",
+        "typeId": 6915,
+        "due": 1458060601824
+      },
+      "eagle_mission": {
+        "2": {
+          "uid": "E:tal/C:0/I:2",
+          "id": 2,
+          "typeId": 6925,
+          "lvl": 1,
+          "name": "Ordinary Clouds",
+          "state": 3,
+          "ttm": 90,
+          "rewards": {
+            "crops": 4821,
+            "stone": 6429,
+            "hero_xp": 1000
+          }
+        },
+        "3": {
+          "uid": "E:tal/C:0/I:3",
+          "id": 3,
+          "typeId": 6925,
+          "lvl": 1,
+          "name": "Ordinary Clouds",
+          "state": 3,
+          "ttm": 120,
+          "rewards": {
+            "stone": 6429,
+            "spirit": 2571,
+            "hero_xp": 500
+          }
+        },
+        "4": {
+          "uid": "E:tal/C:0/I:4",
+          "id": 4,
+          "typeId": 6925,
+          "lvl": 1,
+          "name": "Ordinary Clouds",
+          "state": 3,
+          "ttm": 90,
+          "rewards": {
+            "crops": 4821,
+            "spirit": 2571,
+            "hero_xp": 500
+          }
+        }
+      },
+      "troop_groups": {
+        "my_garrison": {
+          "uid": "E:tal/C:0/UG:0",
+          "id": 0,
+          "typeId": 8000,
+          "home": "3730#0",
+          "name": "Garrison",
+          "state": 0,
+          "loc": 202670,
+          "troops": {
+            "hero_troop": {
+              "uid": "E:tal/C:0/UG:0/T:5110",
+              "typeId": 5110,
+              "qty": 1
+            },
+            "cav_t1": {
+              "uid": "E:tal/C:0/UG:0/T:5401",
+              "typeId": 5401,
+              "qty": 1000
+            }
+          },
+          "traps": {
+            "trap_rng_t2": {
+              "uid": "E:tal/C:0/UG:0/T:5632",
+              "typeId": 5632,
+              "qty": 3000
+            },
+            "trap_inf_t2": {
+              "uid": "E:tal/C:0/UG:0/T:5632",
+              "typeId": 5622,
+              "qty": 5000
+            }
+          }
+        },
+        "my_moving_army": {
+          "457946592969077": {
+            "uid": "UG:457946592969077",
+            "id": 457946592969077,
+            "alliance": "H2O",
+            "home": "3730#0",
+            "vel": 349,
+            "name": "Unnamed Army",
+            "state": 1,
+            "loc": 106624,
+            "due": 1458314287756,
+            "trg": {
+              "!": "TBD island info"
+            },
+            "cmd": "Raid",
+            "troops": {
+              "inf_t1": {
+                "uid": "UG:457946592969077/T:5201",
+                "typeId": 5201,
+                "qty": 2000
+              },
+              "cav_t1": {
+                "uid": "UG:457946592969077/T:5401",
+                "typeId": 5401,
+                "qty": 1000
+              }
+            }
+          }
+        },
+        "my_reinforcing_army": {
+          "!": "TBD"
+        },
+        "my_gathering_army": {
+          "1424902645088350": {
+            "uid": "UG:1424902645088350",
+            "alliance": "H2O",
+            "home": "3730#0",
+            "vel": 349,
+            "name": "Unnamed Army",
+            "state": 5,
+            "loc": 333761,
+            "due": 1458314373263,
+            "sup": {
+              "!": "TBD island info"
+            },
+            "troops": {
+              "inf_t1": {
+                "uid": "UG:1424902645088350/T:5201",
+                "typeId": 5201,
+                "qty": 1000
+              },
+              "cav_t1": {
+                "uid": "UG:1424902645088350/T:5401",
+                "typeId": 5401,
+                "qty": 1000
+              }
+            }
+          }
+        },
+        "my_moving_caravan": {
+          "!": "TBD"
+        },
+        "enemy_incoming": {
+          "!": "TBD"
+        },
+        "wounded_army": {
+          "!": "TBD"
+        },
+        "healing_army": {
+          "!": "TBD"
+        },
+        "friendly_reinforcing_army": {
+          "946421813478223": {
+            "uid": "UG:946421813478223",
+            "id": 946421813478223,
+            "typeId": 8022,
+            "home": "118787#0",
+            "name": "Unnamed Army",
+            "state": 0,
+            "loc": 202670,
+            "sup": "3730#0"
+          }
+        }
+      },
+      "spy_scroll": {
+        "uid": "E:tal/C:0/A:31925",
+        "typeId": 31925,
+        "qty": 100000000
+      },
+      "queues": {
+        "queue_buildings": {
+          "queued": [
+            {
+              "uid": "E:tal/C:0/A:4504/I:368",
+              "typeId": 4504,
+              "id": 368,
+              "cmd": "Make",
+              "type": 4061,
+              "lvl": 15,
+              "slot": 3,
+              "due": 1458092666664
+            }
+          ]
+        },
+        "queue_troops_train": {
+          "queued": [
+            {
+              "uid": "E:tal/C:0/A:4555/I:22",
+              "typeId": 4555,
+              "id": 22,
+              "cmd": "Make",
+              "type": 5501,
+              "qty": 3000,
+              "due": 1458349536480
+            }
+          ]
+        }
+      }
+    }
+  },
+  "Power": {
+    "uid": "E:tal/A:3200",
+    "typeId": 3200,
+    "qty": 682,
+    "cap": 0
+  },
+  "Luck": {
+    "uid": "E:tal/A:3222",
+    "typeId": 3222,
+    "qty": 0,
+    "cap": 0
+  },
+  "bouncing_chest": {
+    "uid": "E:tal/A:6960",
+    "id": 1,
+    "typeId": 6960,
+    "lvl": 1
+  },
+  "spell_tokens": {
+    "token_teleport": {
+      "uid": "E:tal/A:37999",
+      "typeId": 37999,
+      "qty": 2
+    }
+  },
+  "tokens": {
+    "token_protection": {
+      "uid": "E:tal/A:38600",
+      "typeId": 38600,
+      "qty": 2
+    }
+  },
+  "researches": {
+    "res_spy": {
+      "uid": "E:tal/A:61105",
+      "typeId": 61105,
+      "lvl": 1
+    },
+    "res_mag_att": {
+      "uid": "E:tal/A:61142",
+      "typeId": 61142,
+      "lvl": 3,
+      "state": 1,
+      "due": 1458157573264
+    }
+  },
+  "blessings": {
+    "CaptureMonster4": {
+      "1": {
+        "uid": "E:tal/A:70218/I:1",
+        "id": 1,
+        "typeId": 70218,
+        "lvl": 2,
+        "state": 0,
+        "due": 1458315635680,
+        "trg": {
+          "!": "TBD monster info"
+        }
+      }
+    }
+  },
+  "queues": {
+    "queue_research": {
+      "queued": [
+        {
+          "uid": "E:tal/C:0/A:4561/I:98",
+          "id": 98,
+          "typeId": 4561,
+          "cmd": "Make",
+          "type": 61142,
+          "lvl": 4,
+          "due": 1458157573264
+        }
+      ]
+    }
+  },
+  "counter": {
+    "quest": {
+      "q_tree_of_life_2": {
+        "uid": "E:tal/CNT:63400002",
+        "typeId": 63400002,
+        "qty": 1
+      },
+      "q_scout_1": {
+        "uid": "E:tal/CNT:636110501",
+        "typeId": 636110501,
+        "qty": 1
+      }
+    },
+    "spend": {
+      "crops": {
+        "uid": "E:tal/CNT:spend/t:3401",
+        "typeId": 96740000000,
+        "id": 3401,
+        "qty": 4050
+      },
+      "stone": {
+        "uid": "E:tal/CNT:spend/t:3402",
+        "typeId": 96740000000,
+        "id": 3402,
+        "qty": 5840
+      },
+      "spirit": {
+        "uid": "E:tal/CNT:spend/t:3403",
+        "typeId": 96740000000,
+        "id": 3403,
+        "qty": 1090
+      },
+      "token_speedup_1_min": {
+        "uid": "E:tal/CNT:spend/t:38401",
+        "typeId": 96740000000,
+        "id": 38401,
+        "qty": 2
+      },
+      "token_speedup_15_min": {
+        "uid": "E:tal/CNT:spend/t:38402",
+        "typeId": 96740000000,
+        "id": 38402,
+        "qty": 1
+      }
+    },
+    "kill": {
+      "cavalry_troops": {
+        "uid": "E:tal/CNT:kill/t:54",
+        "typeId": 96500000000,
+        "id": 54,
+        "qty": 1
+      },
+      "cav_t1": {
+        "uid": "E:tal/CNT:kill/t:5401",
+        "typeId": 96500000000,
+        "id": 5401,
+        "qty": 1
+      }
+    },
+    "raid": {
+      "empire_resources": {
+        "uid": "E:tal/CNT:raid/t:34",
+        "typeId": 96700000000,
+        "id": 34,
+        "qty": 280
+      },
+      "crops": {
+        "uid": "E:tal/CNT:raid/t:3401",
+        "typeId": 96700000000,
+        "id": 3401,
+        "qty": 280
+      }
+    },
+    "raided": {
+      "crops": {
+        "uid": "E:tal/CNT:raided/t:3401",
+        "typeId": 96710000000,
+        "id": 3401,
+        "qty": 22113
+      },
+      "stone": {
+        "uid": "E:tal/CNT:raided/t:3402",
+        "typeId": 96710000000,
+        "id": 3402,
+        "qty": 22117
+      },
+      "spirit": {
+        "uid": "E:tal/CNT:raided/t:3403",
+        "typeId": 96710000000,
+        "id": 3403,
+        "qty": 22115
+      }
+    },
+    "make": {
+      "infantry_troops": {
+        "uid": "E:tal/CNT:make/t:52",
+        "typeId": 96400000000,
+        "id": 52,
+        "qty": 30
+      },
+      "inf_t1": {
+        "uid": "E:tal/CNT:make/t:5201",
+        "typeId": 96400000000,
+        "id": 5201,
+        "qty": 30
+      },
+      "res_spy": {
+        "uid": "E:tal/CNT:make/t:61105",
+        "typeId": 96400000000,
+        "id": 61105,
+        "qty": 1
+      },
+      "speedup_1_min": {
+        "uid": "E:tal/CNT:make/t:78401",
+        "typeId": 96400000000,
+        "id": 78401,
+        "qty": 2
+      },
+      "speedup_15_min": {
+        "uid": "E:tal/CNT:make/t:78402",
+        "typeId": 96400000000,
+        "id": 78402,
+        "qty": 1
+      },
+      "finish_now": {
+        "uid": "E:tal/CNT:make/t:78499",
+        "typeId": 96400000000,
+        "id": 78499,
+        "qty": 4
+      },
+      "chapel": {
+        "uid": "E:tal/CNT:make/t:4103010",
+        "typeId": 96400000000,
+        "id": 4103,
+        "lvl": 1,
+        "qty": 1
+      },
+      "mine_life": {
+        "uid": "E:tal/CNT:make/t:4201010",
+        "typeId": 96400000000,
+        "id": 4201,
+        "lvl": 1,
+        "qty": 1
+      }
+    },
+    "deffences_pvp_lost": {
+      "uid": "E:tal/CNT:96040000000",
+      "typeId": 96040000000,
+      "id": 0,
+      "qty": 2
+    },
+    "killed": {
+      "infantry_troops": {
+        "uid": "E:tal/CNT:killed/t:52",
+        "typeId": 96510000000,
+        "id": 52,
+        "qty": 30
+      },
+      "inf_t1": {
+        "uid": "E:tal/CNT:96510005201",
+        "typeId": 96510000000,
+        "id": 5201,
+        "qty": 30
+      }
+    },
+    "node": {
+      "xp": {
+        "uid": "E:tal/CNT:96900003255",
+        "typeId": 96900000000,
+        "id": 3255,
+        "qty": 6546
+      }
+    }
+  },
+  "alliance_membership": {
+    "member": {
+      "uid": "E:tal/A:2807/I-103894",
+      "typeId": 2807,
+      "id": 3730,
+      "nick": "Lord3730",
+      "name": "tal",
+      "pwr": 682,
+      "kills": 24931,
+      "online": 1458290498755
+    }
+  },
+  "bookmark": {
+    "331279": {
+      "uid": "E:tal/A:2807/I-103894",
+      "id": 331279,
+      "typeId": 38001,
+      "type": 0,
+      "name": "Darlene(BLD)"
+    }
+  }
+}
