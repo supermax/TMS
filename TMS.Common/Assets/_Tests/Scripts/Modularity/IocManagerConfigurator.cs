@@ -1,7 +1,6 @@
-﻿using TMS.Common.Modularity;
-using UnityEngine;
+﻿using UnityEngine;
 
-namespace Inception.Core.Assets.Plugins.Internal.Core.Plugins.External.TMS.Tests.Scripts.Modularity
+namespace TMS.Common.Modularity
 {
 	public class IocManagerConfigurator : MonoBehaviour
 	{

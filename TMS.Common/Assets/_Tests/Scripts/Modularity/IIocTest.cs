@@ -1,4 +1,7 @@
-﻿public interface IIocTest
+﻿namespace TMS.Common.Modularity
 {
-	string Name { get; set; }
+	public interface IIocTest
+	{
+		string Name { get; set; }
+	}
 }

@@ -1,37 +1,38 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMS.Common.Core;
+﻿using TMS.Common.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class IocManagerTest : ViewModel
+namespace TMS.Common.Modularity
 {
-	[SerializeField] private IocTest _instance;
-
-	[SerializeField] private Text _buttonText;	
-
-	public void Configure()
+	public class IocManagerTest : ViewModel
 	{
-		var type = GetType();
+		[SerializeField] private IocTest _instance;
 
-		Debug.Log("*** Configure Assembly START >> " + type);
+		[SerializeField] private Text _buttonText;	
 
-		IocManager.Configure(type);
+		public void Configure()
+		{
+			var type = GetType();
 
-		_buttonText.text = "DONE";
+			Debug.Log("*** Configure Assembly START >> " + type);
 
-		Debug.Log("*** Configure Assembly END");
-	}
+			IocManager.Configure(type);
 
-	public void Resolve()
-	{
-		Debug.Log("*** Resolve START");
+			_buttonText.text = "DONE";
 
-		_instance = (IocTest)Resolve<IIocTest>();
-		var instanceName = string.Format("{0} ({1})", _instance.Name, _instance.GetHashCode());
-		_buttonText.text = instanceName;
+			Debug.Log("*** Configure Assembly END");
+		}
 
-		Debug.Log("*** Resolve END >> " + instanceName);
-	}
+		public void Resolve()
+		{
+			Debug.Log("*** Resolve START");
+
+			_instance = (IocTest)Resolve<IIocTest>();
+			var instanceName = string.Format("{0} ({1})", _instance.Name, _instance.GetHashCode());
+			_buttonText.text = instanceName;
+
+			Debug.Log("*** Resolve END >> " + instanceName);
+		}
 	
+	}
 }

@@ -1,22 +1,24 @@
 ﻿using System;
-using TMS.Common.Modularity;
 using UnityEngine;
 
-[Serializable]
-[IocTypeMap(typeof(IIocTest), true)]
-public class IocTest : IIocTest
+namespace TMS.Common.Modularity
 {
-	[SerializeField]
-	private string _name;
-
-	public string Name
+	[Serializable]
+	[IocTypeMap(typeof(IIocTest), true)]
+	public class IocTest : IIocTest
 	{
-		get { return _name; }
-		set { _name = value; }
-	}
+		[SerializeField]
+		private string _name;
 
-	public IocTest()
-	{
-		Name = typeof(IocTest).FullName;
+		public string Name
+		{
+			get { return _name; }
+			set { _name = value; }
+		}
+
+		public IocTest()
+		{
+			Name = typeof(IocTest).FullName;
+		}
 	}
 }
