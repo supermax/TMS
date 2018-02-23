@@ -1,0 +1,8 @@
+{
+    "name": "TMS.Common.Tests.PlayMode",
+    "references": [
+        "TMS.Common.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}

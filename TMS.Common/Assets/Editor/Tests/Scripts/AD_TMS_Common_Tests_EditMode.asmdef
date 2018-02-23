@@ -1,0 +1,10 @@
+{
+    "name": "TMS.Common.Tests.EditMode",
+    "references": [
+        "TMS.Common.Runtime"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
