@@ -3,6 +3,7 @@
 using System;
 using System.Threading;
 using TMS.Common.Core;
+using TMS.Common.Helpers;
 using TMS.Common.Logging;
 using TMS.Common.Tasks.Threading;
 using UnityEngine;
@@ -28,6 +29,8 @@ public class ChatManager : ViewModel
 		base.Awake();
 
 		Id = string.Format("USER_{0}", ++_instanceCount);
+
+		Id += DeviceInfo.GetDeviceId();
 
         Loggers.Default.ConsoleLogger.Init();        
 	}
