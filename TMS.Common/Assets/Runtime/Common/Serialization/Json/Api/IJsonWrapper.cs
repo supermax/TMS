@@ -4,7 +4,7 @@ using System.Collections;
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Api
 {
 	/// <summary>
 	///     Interface for Json Wrapper

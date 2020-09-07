@@ -5,10 +5,11 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
 using System.Text;
+using TMS.Common.Serialization.Json.Api;
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Interpreters
 {
 	/// <summary>
 	///     Json Writer

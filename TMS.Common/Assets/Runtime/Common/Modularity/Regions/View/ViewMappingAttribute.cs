@@ -1,4 +1,5 @@
 ﻿using System;
+using TMS.Common.Modularity.Ioc;
 using UnityEngine;
 
 namespace TMS.Common.Modularity.Regions

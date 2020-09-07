@@ -1,5 +1,6 @@
 ﻿using System;
 using TMS.Common.Modularity;
+using TMS.Common.Modularity.Ioc;
 using UnityEngine;
 
 [Serializable]

@@ -4,6 +4,7 @@ using NUnit.Framework;
 
 using TMS.Common.Messaging;
 using TMS.Common.Modularity;
+using TMS.Common.Modularity.Ioc;
 
 namespace TMS.Common.Test.Messaging
 {

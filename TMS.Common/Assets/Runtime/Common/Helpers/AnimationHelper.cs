@@ -7,7 +7,7 @@ using Object = UnityEngine.Object;
 
 #endregion
 
-namespace TMS.Runtime.Unity.Animations
+namespace TMS.Common.Helpers
 {
 	/// <summary>
 	/// Animation Helper

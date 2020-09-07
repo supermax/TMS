@@ -4,17 +4,15 @@
 
 using TMS.Common.Logging;
 using TMS.Common.Config;
-using System;
-using System.Collections.Generic;
 using TMS.Common.Extensions;
-using TMS.Common.Logging.Api;
 using TMS.Common.Messaging;
 using TMS.Common.Modularity;
+using TMS.Common.Modularity.Ioc;
 using TMS.Common.Network.Request.Api;
 using TMS.Common.Serialization.Json;
+
 #if UNITY3D
 using UnityEngine;
-
 #endif
 
 #endregion
@@ -27,11 +25,6 @@ namespace TMS.Common.Network.Config.Api
 		protected const string ConfigFilePath = @"Config/NetworkConfig";
 
 		public virtual NetworkRequestConfigurationData RequestsConfig { get; set; }
-
-		//public NetworkConfiguration()
-		//{
-		//	//LoadConfigFromFile(ConfigFilePath); // TODO call from another class
-		//}
 
 		public override IBaseConfiguration LoadConfigFromFile(string filePath, bool updateConsumers = true)
 		{

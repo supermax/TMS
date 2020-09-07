@@ -217,9 +217,9 @@
 
 		#region Methods
 
-		public static string GetPerametrizedPerson(string name, string sorname, int age)
+		public static string GetPerametrizedPerson(string name, string surname, int age)
 		{
-			return string.Format("{{ \"name\":\"{0}\", \"surname\":\"{1}\", \"age\" : {2} }}", name, sorname, age);
+			return $"{{ \"name\": \"{name}\", \"surname\": \"{surname}\", \"age\": {age} }}";
 		}
 
 		#endregion

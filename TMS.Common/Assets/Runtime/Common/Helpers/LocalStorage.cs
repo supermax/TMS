@@ -4,7 +4,7 @@ using System;
 using System.IO;
 using TMS.Common.Core;
 using TMS.Common.Modularity;
-
+using TMS.Common.Modularity.Ioc;
 #if UNITY || UNITY3D || UNITY_3D
 using UnityEngine;
 #if UNITY_IPHONE

@@ -2,10 +2,9 @@
 
 #region Usings
 
-using TMS.Common.Serialization.Json;
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
+using TMS.Common.Serialization.Json.Api;
 
 #if !UNITY3D && !UNITY_3D
 #if !NETFX_CORE
@@ -17,7 +16,7 @@ using Windows.UI.Xaml.Markup;
 
 #endregion
 
-namespace TMS.Common.Modularity
+namespace TMS.Common.Modularity.Boot
 {
 	/// <summary>
 	/// Module Catalog

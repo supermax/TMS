@@ -9,6 +9,7 @@ using System.Diagnostics;
 using System.Linq.Expressions;
 using System.Windows.Input;
 using System.Xml.Serialization;
+using TMS.Common.Modularity.Ioc.Api;
 
 #region TMS
 using TMS.Common.Logging;
@@ -658,7 +659,7 @@ where T : ICommand
 		/// </value>
 		protected virtual IIocManager IocManager
 		{
-			get { return Modularity.IocManager.Default; }
+			get { return Modularity.Ioc.IocManager.Default; }
 		}
 
 		/// <summary>

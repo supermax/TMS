@@ -33,8 +33,8 @@ namespace TMS.Common.Core
 						try
 						{
 							_isInitializing = true;
-							Modularity.IocManager.Default.Register<T>(typeof(T), true);
-							_default = Modularity.IocManager.Default.Resolve<T>();
+							Modularity.Ioc.IocManager.Default.Register<T>(typeof(T), true);
+							_default = Modularity.Ioc.IocManager.Default.Resolve<T>();
 						}
 						finally
 						{
@@ -55,7 +55,7 @@ namespace TMS.Common.Core
 		protected override void OnDestroy()
 		{
 			_default = null;
-			Modularity.IocManager.Default.Unregister(this);
+			Modularity.Ioc.IocManager.Default.Unregister(this);
 			base.OnDestroy();
 		}
 	}

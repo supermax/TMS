@@ -1,4 +1,4 @@
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Interpreters
 {
 	internal enum ParserToken
 	{

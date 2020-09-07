@@ -3,10 +3,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using TMS.Common.Serialization.Json.Api;
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Interpreters
 {
 	/// <summary>
 	///     Json Reader
@@ -440,7 +441,7 @@ namespace TMS.Common.Serialization.Json
 		///     Reads this instance.
 		/// </summary>
 		/// <returns></returns>
-		/// <exception cref="TMS.Common.Serialization.Json.JsonException">
+		/// <exception cref="JsonException">
 		///     Input doesn't evaluate to proper JSON text
 		///     or
 		/// </exception>

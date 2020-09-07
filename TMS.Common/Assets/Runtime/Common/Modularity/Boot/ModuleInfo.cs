@@ -1,7 +1,8 @@
 ﻿using System;
 using TMS.Common.Serialization.Json;
+using TMS.Common.Serialization.Json.Api;
 
-namespace TMS.Common.Modularity
+namespace TMS.Common.Modularity.Boot
 {
 	/// <summary>
 	/// Module Info

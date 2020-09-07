@@ -1,12 +1,16 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using TMS.Common.Extensions;
-using UnityEngine;
+using TMS.Common.Serialization.Json.Helpers;
 
-namespace TMS.Common.Serialization.Json
+#if DEBUG_JSON
+using UnityEngine;
+using System.Linq;
+#endif
+
+namespace TMS.Common.Serialization.Json.Metadata
 {
     internal class MetadataHandler
     {

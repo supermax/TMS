@@ -18,7 +18,7 @@ using TMS.Common.Properties;
 using TMS.Common.Helpers;
 using TMS.Common.Logging.Api;
 using TMS.Common.Modularity;
-
+using TMS.Common.Modularity.Ioc;
 #if UNITY3D
 using UnityEngine;
 #endif

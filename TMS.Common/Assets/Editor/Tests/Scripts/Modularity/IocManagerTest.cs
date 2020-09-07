@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using NUnit.Framework;
 using TMS.Common.Modularity;
+using TMS.Common.Modularity.Ioc;
 using UnityEngine;
 
 namespace TMS.Common.Test.Modularity

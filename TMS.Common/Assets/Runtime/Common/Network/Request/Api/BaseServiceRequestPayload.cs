@@ -1,9 +1,9 @@
 #region Usings
 
 using System;
-using TMS.Common.Serialization.Json;
 using System.Collections.Generic;
 using TMS.Common.Network.Api;
+using TMS.Common.Serialization.Json.Api;
 
 #endregion
 

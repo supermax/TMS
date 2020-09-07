@@ -1,7 +1,8 @@
 using System.Reflection;
 using TMS.Common.Extensions;
+using TMS.Common.Serialization.Json.Api;
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Helpers
 {
     internal static class ReflectionHelper
     {

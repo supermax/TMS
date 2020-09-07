@@ -6,7 +6,7 @@ using System;
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Api
 {
 	/// <summary>
 	///     JSON Data Member Attribute

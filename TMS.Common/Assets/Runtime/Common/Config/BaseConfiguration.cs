@@ -7,6 +7,7 @@ using TMS.Common.Extensions;
 using TMS.Common.Messaging;
 using TMS.Common.Modularity;
 using TMS.Common.Serialization.Json;
+using TMS.Common.Serialization.Json.Api;
 #if UNITY3D || UNITY_3D
 using UnityEngine;
 #endif

@@ -1,5 +1,6 @@
 ﻿using System;
 using TMS.Common.Serialization.Json;
+using TMS.Common.Serialization.Json.Api;
 
 namespace TMS.Common.Tests.Serialization.Json.TestClasses
 {

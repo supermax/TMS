@@ -3,6 +3,7 @@ using System.Linq;
 using TMS.Common.Core;
 using System.Reflection;
 using TMS.Common.Extensions;
+using TMS.Common.Modularity.Ioc;
 using UnityEngine;
 
 namespace TMS.Common.Modularity.Regions.Adapters

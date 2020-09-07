@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Threading;
 using TMS.Common.Core;
 using TMS.Common.Modularity;
+using TMS.Common.Modularity.Ioc;
 #if UNITY3D
 using UnityEngine;
 #else

@@ -2,19 +2,20 @@
 
 #region Usings
 
-using TMS.Common.Logging;
+#if UNITY3D || UNITY_3D
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using TMS.Common.Extensions;
-
-#if UNITY3D || UNITY_3D
+using TMS.Common.Modularity.Ioc.Api;
+using TMS.Common.Modularity.Ioc.Config;
+using TMS.Common.Modularity.Unity;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
-using TMS.Common.Modularity.Unity;
+
 #endif
 #endif
 
@@ -24,13 +25,13 @@ using TypeExtensions = NUnit.Compatibility.TypeExtensions;
 
 #endregion
 
-namespace TMS.Common.Modularity
+namespace TMS.Common.Modularity.Ioc
 {
 	/*
 	 TODO
 
 		>> in case we are running in unity editor:
-			a) print list of none mono-beavior instrances in some component
+			a) print list of none misbehavior instances in some component
 			B) ...
 
 		>> in case we are not in running in unity editor:

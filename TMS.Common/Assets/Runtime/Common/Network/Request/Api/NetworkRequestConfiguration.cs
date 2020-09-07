@@ -5,6 +5,7 @@ using TMS.Common.Network.Api;
 using TMS.Common.Network.Config.Api;
 using TMS.Common.Network.Response.Api;
 using TMS.Common.Serialization.Json;
+using TMS.Common.Serialization.Json.Api;
 
 #endregion
 
@@ -22,7 +23,7 @@ namespace TMS.Common.Network.Request.Api
 		}
 
 		[JsonDataMember("url")]
-		public virtual string ServiceUrl { get; set; }
+		public string ServiceUrl { get; set; }
 
 		[JsonDataMember("timeout")]
 		public float RequestTimeout { get; set; }
@@ -31,7 +32,7 @@ namespace TMS.Common.Network.Request.Api
 		public int RequestMaxRetriesNum { get; set; }
 
 		[JsonDataMember("method")]
-		public virtual ServiceRequestType RequestType { get; set; }
+		public ServiceRequestType RequestType { get; set; }
 
 		[JsonDataMember("cacheMode")] // TODO
 		public ServiceRequestCacheType CacheType { get; set; }
@@ -49,10 +50,10 @@ namespace TMS.Common.Network.Request.Api
 		public int[] SuppressErrors { get; set; }
 
 		[JsonDataMember("responseType")]
-		public virtual ResponsePayloadDataType ResponseDataType { get; set; }
+		public ResponsePayloadDataType ResponseDataType { get; set; }
 
 		[JsonDataMember("urlRandomParam")]
-		public virtual bool RandomUrlParam { get; set; }
+		public bool RandomUrlParam { get; set; }
 
 		public NetworkRequestConfiguration Clone()
 		{

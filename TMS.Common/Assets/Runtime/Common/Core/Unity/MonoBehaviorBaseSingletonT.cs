@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using TMS.Common.Modularity.Ioc;
+using UnityEngine;
 
 namespace TMS.Common.Core
 {
@@ -36,8 +37,8 @@ namespace TMS.Common.Core
 						try
 						{
 							_isInitializing = true;
-							Modularity.IocManager.Default.Register<TInterface>(typeof(TImplementation), true);
-							_default = Modularity.IocManager.Default.Resolve<TInterface>();							
+							IocManager.Default.Register<TInterface>(typeof(TImplementation), true);
+							_default = IocManager.Default.Resolve<TInterface>();							
 
 							//DontDestroyOnLoad(_default);
 						}
@@ -60,7 +61,7 @@ namespace TMS.Common.Core
 		protected override void OnDestroy()
 		{
 			_default = default(TInterface);
-			Modularity.IocManager.Default.Unregister(this);
+			IocManager.Default.Unregister(this);
 			base.OnDestroy();
 		}
 	}

@@ -2,6 +2,7 @@
 
 using System;
 using TMS.Common.Serialization.Json;
+using TMS.Common.Serialization.Json.Api;
 using UnityEngine;
 
 namespace TMS.Common.Logging.Api

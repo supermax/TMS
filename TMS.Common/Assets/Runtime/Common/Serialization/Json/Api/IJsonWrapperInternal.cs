@@ -3,7 +3,9 @@
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+using TMS.Common.Serialization.Json.Interpreters;
+
+namespace TMS.Common.Serialization.Json.Api
 {
 	internal interface IJsonWrapperInternal : IJsonWrapper
 	{

@@ -5,7 +5,7 @@ using System.Reflection;
 
 #endregion
 
-namespace TMS.Common.Modularity
+namespace TMS.Common.Modularity.Ioc.Api
 {
 	/// <summary>
 	///     Interface for IOC Manager

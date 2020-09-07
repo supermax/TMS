@@ -1,10 +1,11 @@
 #region
 
 using System;
+using TMS.Common.Serialization.Json.Interpreters;
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Api
 {
 	/// <summary>
 	/// </summary>

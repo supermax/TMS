@@ -7,22 +7,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using TMS.Common.Logging;
+using TMS.Common.Modularity.Boot.Api;
+using TMS.Common.Modularity.Ioc;
+using TMS.Common.Serialization.Json;
+using UnityEngine;
 using Resources = TMS.Common.Properties.Resources;
 
 #if UNITY3D || UNITY_3D
-using UnityEngine;
-using TMS.Common.Serialization.Json;
 #endif
 
 #if !UNITY_WSA
-using System.IO;
-using System.Windows;
-using System.Globalization;
+
 #endif
 
 #endregion
 
-namespace TMS.Common.Modularity
+namespace TMS.Common.Modularity.Boot
 {
 	/// <summary>
 	///     Bootstrapper

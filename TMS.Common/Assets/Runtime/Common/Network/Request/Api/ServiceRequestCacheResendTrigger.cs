@@ -7,6 +7,6 @@ namespace TMS.Common.Network.Request.Api
 	{
 		None = 0,
 		MaxCacheSize,
-		SericeRecovery
+		ServiceRecovery
 	}
 }

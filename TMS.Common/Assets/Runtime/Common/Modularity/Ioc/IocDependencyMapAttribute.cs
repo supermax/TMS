@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace TMS.Common.Modularity
+namespace TMS.Common.Modularity.Ioc
 {
 	/// <summary>
-	/// IOC Dependecy Mapping Attribute
+	/// IOC Dependency Mapping Attribute
 	/// </summary>
 	/// <seealso cref="Attribute" />
 	[AttributeUsage(AttributeTargets.Constructor | AttributeTargets.Property)]

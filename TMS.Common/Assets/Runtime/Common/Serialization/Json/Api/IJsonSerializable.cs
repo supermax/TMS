@@ -1,4 +1,4 @@
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Api
 {
 	/// <summary>
 	/// Serializable object to JSON string format

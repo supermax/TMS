@@ -10,6 +10,7 @@ using TMS.Common.Extensions;
 using TMS.Common.Logging.Api;
 using TMS.Common.Messaging;
 using TMS.Common.Modularity;
+using TMS.Common.Modularity.Ioc;
 using TMS.Common.Network.Request.Api;
 using TMS.Common.Serialization.Json;
 #if UNITY3D

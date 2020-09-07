@@ -3,10 +3,11 @@
 using System;
 using System.IO;
 using System.Text;
+using TMS.Common.Serialization.Json.Api;
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Interpreters
 {
 	/// <summary>
 	///     Lexer
@@ -1049,7 +1050,7 @@ namespace TMS.Common.Serialization.Json
 		///     Nexts the token.
 		/// </summary>
 		/// <returns></returns>
-		/// <exception cref="TMS.Common.Serialization.Json.JsonException"></exception>
+		/// <exception cref="JsonException"></exception>
 		public bool NextToken()
 		{
 			_fsmContext.Return = false;

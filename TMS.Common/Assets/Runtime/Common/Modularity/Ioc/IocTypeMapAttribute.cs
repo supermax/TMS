@@ -4,7 +4,7 @@ using System;
 
 #endregion
 
-namespace TMS.Common.Modularity
+namespace TMS.Common.Modularity.Ioc
 {
 	/// <summary>
 	///     IOC Type Mapping Attribute

@@ -3,14 +3,13 @@
 #region Usings
 
 using System;
-
 #if !NETFX_CORE && !UNITY_METRO && !UNITY_WP8
-using System.Threading;
+
 #endif
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Api
 {
 	/// <summary>
 	/// Interface for JsonMapper

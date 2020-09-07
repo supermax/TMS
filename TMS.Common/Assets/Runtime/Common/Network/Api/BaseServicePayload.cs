@@ -1,4 +1,5 @@
 using TMS.Common.Serialization.Json;
+using TMS.Common.Serialization.Json.Api;
 
 namespace TMS.Common.Network.Api
 {
@@ -33,7 +34,7 @@ namespace TMS.Common.Network.Api
 		/// <value>
 		/// The name of the service.
 		/// </value>
-		[JsonDataMember]
+		[JsonDataMember("serviceName")]
 		public virtual string ServiceName { get; set; }
 
 		/// <summary>
@@ -42,7 +43,7 @@ namespace TMS.Common.Network.Api
 		/// <value>
 		/// <c>true</c> if this instance is custom service; otherwise, <c>false</c>.
 		/// </value>
-		[JsonDataMember]
+		[JsonDataMember("customService")]
 		public virtual bool IsCustomService { get; set; }
 
 		/// <summary>

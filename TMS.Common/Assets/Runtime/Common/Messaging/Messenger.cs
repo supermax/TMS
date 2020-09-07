@@ -7,6 +7,7 @@ using TMS.Common.Core;
 using TMS.Common.Extensions;
 using TMS.Common.Logging.Api;
 using TMS.Common.Modularity;
+using TMS.Common.Modularity.Ioc;
 using TMS.Common.Tasks.Threading;
 
 #endregion
@@ -79,7 +80,7 @@ namespace TMS.Common.Messaging
 		}
 
 		/// <summary>
-		///     Unsubscribes the specified callback.
+		///     Unsubscribe the specified callback.
 		/// </summary>
 		/// <typeparam name="T">Payload type</typeparam>
 		/// <param name="callback">The callback.</param>
@@ -95,7 +96,7 @@ namespace TMS.Common.Messaging
 		}
 
 		/// <summary>
-		///     Unsubscribes the specified callback by delegate unique id.
+		///     Unsubscribe the specified callback by delegate unique id.
 		/// </summary>
 		/// <param name="delegateUniqueId">The delegate unique id.</param>
 		public void Unsubscribe(string delegateUniqueId)
@@ -123,7 +124,7 @@ namespace TMS.Common.Messaging
 		/// <param name="payload">The payload.</param>
 		/// <param name="async">if set to <c>true</c> [async].</param>
 		/// <returns></returns>
-		internal WeakDelegatesManager PublishInternal<T>(T payload, bool async)
+		private WeakDelegatesManager PublishInternal<T>(T payload, bool async)
 		{
 			ArgumentValidator.AssertNotDefault(payload, "payload");
 			Log(LogType.Log, "{0}.Publish(payload=\"{1}\") [START]", this, payload);

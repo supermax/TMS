@@ -1,19 +1,21 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using System.Reflection;
 using TMS.Common.Extensions;
 
-namespace TMS.Common.Modularity
+namespace TMS.Common.Modularity.Ioc
 {
 	internal static class IocHelper
 	{
 		internal static ConstructorInfo GetMatchingConstructor(IEnumerable<ConstructorInfo> ctors, object[] args)
 		{
-			if (ctors.IsNullOrEmpty()) return null;
+			var constructorInfos = ctors as ConstructorInfo[] ?? ctors.ToArray();
+			if (constructorInfos.IsNullOrEmpty()) return null;
 
 			// no arguments were passed, will use default constructor
 			if (args.IsNullOrEmpty())
 			{
-				foreach (var ctor in ctors)
+				foreach (var ctor in constructorInfos)
 				{
 					if (!ctor.IsPublic || ctor.IsStatic) continue;
 
@@ -26,7 +28,7 @@ namespace TMS.Common.Modularity
 			}
 
 			// arguments were passed, will try to find matching constructor
-			foreach (var ctor in ctors)
+			foreach (var ctor in constructorInfos)
 			{
 				if (!ctor.IsPublic || ctor.IsStatic) continue;
 

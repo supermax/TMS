@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using NUnit.Framework;
 using TMS.Common.Serialization.Json;
+using TMS.Common.Serialization.Json.Api;
 using TMS.Common.Tests.Serialization.Json.TestClasses;
 using TMS.Common.Tests.Serialization.Json.TestResources;
 
@@ -27,7 +28,9 @@ namespace TMS.Common.Test.Serialization.Json
 		[SetUp]
 		public void Startup()
 		{
-			_jsonTest = File.ReadAllText(FileResources.JsonTestFilePath);
+			//_jsonTest = File.ReadAllText(FileResources.JsonTestFilePath);
+
+			_jsonTest = FileResources.GetJsonTextAsset().text;
 		}
 
 		#endregion
@@ -73,21 +76,21 @@ namespace TMS.Common.Test.Serialization.Json
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_GetJsonDataObjectFromString_NotNull()
+		public void JsonMapper_Conversion_GetJsonDataObjectFromString_NotNull()
 		{
 			var person = JsonMapper.Default.ToObject(StringResources.Person);
 			Assert.IsNotNull(person);
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_JsonDataObjectToSpecifiedType_NotNull()
+		public void JsonMapper_Conversion_JsonDataObjectToSpecifiedType_NotNull()
 		{
 			var jsonDataPerson = JsonMapper.Default.ToObject(StringResources.Person);
 			var person = JsonMapper.Default.ToObject<Person>(jsonDataPerson);
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_GetArrayOfJsonData_WithRightCount()
+		public void JsonMapper_Conversion_GetArrayOfJsonData_WithRightCount()
 		{
 			var persons = JsonMapper.Default.ToObject(StringResources.PersonArray);
 			Assert.IsNotNull(persons);
@@ -95,14 +98,14 @@ namespace TMS.Common.Test.Serialization.Json
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_CountOfObjectsProperties_EqualsToTypesPropertiesCount()
+		public void JsonMapper_Conversion_CountOfObjectsProperties_EqualsToTypesPropertiesCount()
 		{
 			var jsonDataPerson = JsonMapper.Default.ToObject(StringResources.Person);
 			Assert.AreEqual(jsonDataPerson.Count, StringResources.PersonPropertiesCount);
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_ArrayOfJsonData_ToSpecifiedType_RightElementCount()
+		public void JsonMapper_Conversion_ArrayOfJsonData_ToSpecifiedType_RightElementCount()
 		{
 			var jsonDataPersons = JsonMapper.Default.ToObject(StringResources.PersonArray);
 			var persons = JsonMapper.Default.ToObject<Person[]>(jsonDataPersons);
@@ -110,14 +113,14 @@ namespace TMS.Common.Test.Serialization.Json
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_LoginDataFormatToJsonDataObject()
+		public void JsonMapper_Conversion_LoginDataFormatToJsonDataObject()
 		{
 			var loginJsonData = JsonMapper.Default.ToObject(_jsonTest);
 			Assert.IsNotNull(loginJsonData);
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_LoginDataFormatToClass()
+		public void JsonMapper_Conversion_LoginDataFormatToClass()
 		{
 			//var loginJsonData = JsonMapper.Default.ToObject(_jsonTest);
 			//Assert.IsNotNull(loginJsonData);
@@ -133,7 +136,7 @@ namespace TMS.Common.Test.Serialization.Json
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_Subclasses_Initialized()
+		public void JsonMapper_Conversion_Subclasses_Initialized()
 		{
 			//var jsonDataJsonClass = JsonMapper.Default.ToObject(StringResources.JsonClass);
 			var jsonClass = JsonMapper.Default.ToObject<JsonClass>(StringResources.JsonClass);
@@ -144,7 +147,7 @@ namespace TMS.Common.Test.Serialization.Json
 		}
 
 		[Test]
-		public void JsonMapper_Convertion_LoginDataFormat()
+		public void JsonMapper_Conversion_LoginDataFormat()
 		{
 			var loginJsonData = JsonMapper.Default.ToObject(_jsonTest);
 			Assert.AreEqual(loginJsonData.Count, 12);

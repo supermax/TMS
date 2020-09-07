@@ -8,11 +8,15 @@ using System.IO;
 using System.Linq;
 using TMS.Common.Core;
 using TMS.Common.Extensions;
+using TMS.Common.Serialization.Json.Interpreters;
+
+#if DEBUG_JSON
 using TMS.Common.Logging;
+#endif
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Api
 {
 	/// <summary>
 	///     Json Data

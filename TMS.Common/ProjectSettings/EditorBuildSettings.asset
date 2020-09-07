@@ -6,5 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/Scenes/IoC/IoC.Login.Scene.unity
-    guid: 40292ff4bce76426c8344df0f6aa0346
+    path: Assets/Tests/Scenes/Menu_TestScene.unity
+    guid: c399e53ec3a1ad848a08d32afefabfbd
+  - enabled: 1
+    path: Assets/Tests/Scenes/IoC_TestScene.unity
+    guid: efe3bf8249d43d94683ae1ff953d68d2
+  - enabled: 1
+    path: Assets/Tests/Scenes/PubSub1_TestScene.unity
+    guid: 5665bf5b1040777418ad6d240c6dfb41
+  - enabled: 1
+    path: Assets/Tests/Scenes/PubSub2_TestScene.unity
+    guid: 63e0a20b587649e4ba0b97145ebf130f
+  m_configObjects: {}

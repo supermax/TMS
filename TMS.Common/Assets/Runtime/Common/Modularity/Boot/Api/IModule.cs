@@ -1,4 +1,4 @@
-﻿namespace TMS.Common.Modularity
+﻿namespace TMS.Common.Modularity.Boot.Api
 {
 	/// <summary>
 	/// </summary>

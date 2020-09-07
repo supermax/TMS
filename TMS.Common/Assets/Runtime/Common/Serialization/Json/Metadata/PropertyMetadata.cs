@@ -3,10 +3,11 @@
 using System;
 using System.Reflection;
 using TMS.Common.Extensions;
+using TMS.Common.Serialization.Json.Api;
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Metadata
 {
 	/// <summary>
 	/// Property Metadata

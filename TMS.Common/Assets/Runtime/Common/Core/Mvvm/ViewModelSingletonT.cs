@@ -35,8 +35,8 @@
 						try
 						{
 							_isInitializing = true;
-							Modularity.IocManager.Default.Register<TInterface>(typeof(TImplementation), true);
-							_default = Modularity.IocManager.Default.Resolve<TInterface>();
+							Modularity.Ioc.IocManager.Default.Register<TInterface>(typeof(TImplementation), true);
+							_default = Modularity.Ioc.IocManager.Default.Resolve<TInterface>();
 						}
 						finally
 						{
@@ -57,7 +57,7 @@
 		protected override void OnDestroy()
 		{
 			_default = default(TInterface);
-			Modularity.IocManager.Default.Unregister(this);
+			Modularity.Ioc.IocManager.Default.Unregister(this);
 			base.OnDestroy();
 		}
 	}

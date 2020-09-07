@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Linq;
 using NUnit.Framework;
 using TMS.Common.Extensions;
+using TMS.Common.Serialization.Json.Api;
 using TMS.Common.Tests.Serialization.Json.TestClasses;
 using TMS.Common.Tests.Serialization.Json.TestResources;
 

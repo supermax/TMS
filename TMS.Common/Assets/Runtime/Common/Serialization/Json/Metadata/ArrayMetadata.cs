@@ -1,10 +1,11 @@
 #region
 
 using System;
+using TMS.Common.Serialization.Json.Api;
 
 #endregion
 
-namespace TMS.Common.Serialization.Json
+namespace TMS.Common.Serialization.Json.Metadata
 {
 	/// <summary>
 	///     Array Metadata

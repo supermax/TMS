@@ -1,6 +1,8 @@
 #define UNITY3D
 
 using System.Collections.Generic;
+using TMS.Common.Modularity.Boot;
+using TMS.Common.Modularity.Boot.Api;
 
 #if !UNITY3D && !UNITY_3D
 using System.Threading.Tasks;

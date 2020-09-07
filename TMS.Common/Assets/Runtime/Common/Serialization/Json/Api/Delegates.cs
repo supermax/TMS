@@ -1,4 +1,6 @@
-﻿namespace TMS.Common.Serialization.Json
+﻿using TMS.Common.Serialization.Json.Interpreters;
+
+namespace TMS.Common.Serialization.Json.Api
 {
 	/// <summary>
 	///     Exporter Function delegate
@@ -13,7 +15,7 @@
 	/// <typeparam name="T"></typeparam>
 	/// <param name="obj">The obj.</param>
 	/// <param name="writer">The writer.</param>
-	internal delegate void ExporterFunc<T>(T obj, JsonWriter writer);
+	internal delegate void ExporterFunc<in T>(T obj, JsonWriter writer);
 
 	/// <summary>
 	///     Importer Function delegate
@@ -29,7 +31,7 @@
 	/// <typeparam name="TValue">The type of the value.</typeparam>
 	/// <param name="input">The input.</param>
 	/// <returns></returns>
-	public delegate TValue ImporterFunc<TJson, TValue>(TJson input);
+	public delegate TValue ImporterFunc<in TJson, out TValue>(TJson input);
 
 	/// <summary>
 	///     Wrapper Factory delegate
