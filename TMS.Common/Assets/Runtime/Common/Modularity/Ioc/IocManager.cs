@@ -10,12 +10,11 @@ using System.Reflection;
 using TMS.Common.Extensions;
 using TMS.Common.Modularity.Ioc.Api;
 using TMS.Common.Modularity.Ioc.Config;
-using TMS.Common.Modularity.Unity;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
-
+using TMS.Common.Modularity.Unity;
 #endif
 #endif
 
