@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using TMS.Common.Extensions;
 using UnityEngine;
 
 namespace TMS.Common.Tests.Serialization.Json.TestResources
@@ -7,12 +8,14 @@ namespace TMS.Common.Tests.Serialization.Json.TestResources
 	{
 		#region Slots club login
 
-		// public const string JsonTestFilePath =
-		// 	@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_JsonTest.json";
+		//@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_JsonTest.json";
+		//@"Z:\SuperMax\Git\swar\skywarsarchonrises\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_Config.json"
 
-		public static TextAsset GetJsonTextAsset()
+		public static TextAsset GetJsonTextAsset(string fileName)
 		{
-			var jTextAsset = Resources.Load<TextAsset>(@"_JsonTest");
+			ArgumentValidator.AssertNotNullOrEmpty(fileName, "fileName");
+			
+			var jTextAsset = Resources.Load<TextAsset>(fileName);
 			return jTextAsset;
 		}
 

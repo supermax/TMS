@@ -154,7 +154,7 @@ namespace TMS.Common.Messaging
 				manager.Raise(async, payload);
 				HandleBroadcastPayload(payload as IBroadcastPayload);
 			};
-			if (ThreadHelper.Default.IsMainThread())
+			if (ThreadHelper.IsMainThread())
 			{
 				act();
 			}

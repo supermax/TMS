@@ -24,21 +24,25 @@ namespace TMS.Common.Tasks.Threading
 	/// </summary>
 	[IocTypeMap(typeof(IThreadHelper), true, InstantiateOnRegistration = true)]	
 #if UNITY3D	
-//[ExecuteInEditMode]
+[ExecuteInEditMode]
 public class ThreadHelper : MonoBehaviorBaseSingleton<IThreadHelper, ThreadHelper>, IThreadHelper
 #else
 	public class ThreadHelper : Singleton<ThreadHelper>
 #endif
 	{
+		static ThreadHelper()
+		{
+			MainThreadId = Thread.CurrentThread.ManagedThreadId;
+		}
+		
 		private void Init()
 	    {
-            _mainThreadId = Thread.CurrentThread.ManagedThreadId;
             CurrentDispatcher = CustomTaskDispatcher.MainNoThrow ?? new CustomTaskDispatcher();
             CurrentTaskDistributor = TaskDistributor.MainNoThrow ?? new TaskDistributor("TaskDistributor");
 
-			Debug.LogFormat("MainThreadId: {0}, CurrentDispatcher: {1}, CurrentTaskDistributor: {2}", _mainThreadId, CurrentDispatcher, CurrentTaskDistributor);
+			Debug.LogFormat("MainThreadId: {0}, CurrentDispatcher: {1}, CurrentTaskDistributor: {2}", MainThreadId, CurrentDispatcher, CurrentTaskDistributor);
         }
-
+		
 		/// <summary>
 		///     Returns the GUI/Main Dispatcher.
 		/// </summary>
@@ -71,15 +75,15 @@ public class ThreadHelper : MonoBehaviorBaseSingleton<IThreadHelper, ThreadHelpe
 		/// </value>
 		public TaskDistributor CurrentTaskDistributor { get; private set; }
 
-		private int _mainThreadId;
+		private static readonly int MainThreadId;
 
         /// <summary>
         /// Determines whether called method is on main thread
         /// </summary>
         /// <returns></returns>
-        public bool IsMainThread()
+        public static bool IsMainThread()
 	    {
-	        var isMain = _mainThreadId == Thread.CurrentThread.ManagedThreadId;
+	        var isMain = MainThreadId == Thread.CurrentThread.ManagedThreadId;
 	        return isMain;
 	    }
 

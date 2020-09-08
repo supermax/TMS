@@ -28,9 +28,7 @@ namespace TMS.Common.Test.Serialization.Json
 		[SetUp]
 		public void Startup()
 		{
-			//_jsonTest = File.ReadAllText(FileResources.JsonTestFilePath);
-
-			_jsonTest = FileResources.GetJsonTextAsset().text;
+			_jsonTest = FileResources.GetJsonTextAsset("_JsonTest").text;
 		}
 
 		#endregion
@@ -45,7 +43,7 @@ namespace TMS.Common.Test.Serialization.Json
 		}
 
 		[Test]
-		public void JsonMapper_Convertation_ClassProperties_Setting()
+		public void JsonMapper_Conversion_ClassProperties_Setting()
 		{
 			const string name = "person_name";
 			const string surname = "person_surname";

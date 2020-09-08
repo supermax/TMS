@@ -32,7 +32,7 @@ namespace TMS.Common.Tests.Serialization.Json
 		}
 
 		[Test]
-		public void JsonData_Convertion_Explicit_Int()
+		public void JsonData_Conversion_Explicit_Int()
 		{
 			const int value = 273;
 			var jsonData = new JsonData(value);
@@ -48,7 +48,7 @@ namespace TMS.Common.Tests.Serialization.Json
 		}
 
 		[Test]
-		public void JsonData_Convertion_Explicit_Double()
+		public void JsonData_Conversion_Explicit_Double()
 		{
 			const double value = 34.38;
 			var jsonData = new JsonData(value);
@@ -64,7 +64,7 @@ namespace TMS.Common.Tests.Serialization.Json
 		}
 
 		[Test]
-		public void JsonData_Convertion_Explicit_Boolean()
+		public void JsonData_Conversion_Explicit_Boolean()
 		{
 			const bool value = true;
 			var jsonData = new JsonData(value);
@@ -80,7 +80,7 @@ namespace TMS.Common.Tests.Serialization.Json
 		}
 
 		[Test]
-		public void JsonData_Convertion_Explicit_String()
+		public void JsonData_Conversion_Explicit_String()
 		{
 			const string value = StringResources.TestString;
 			var jsonData = new JsonData(value);
@@ -96,7 +96,7 @@ namespace TMS.Common.Tests.Serialization.Json
 		}
 
 		[Test]
-		public void JsonData_Convertion_Explicit_Long()
+		public void JsonData_Conversion_Explicit_Long()
 		{
 			const long value = 43324L;
 			var jsonData = new JsonData(value);
@@ -104,7 +104,7 @@ namespace TMS.Common.Tests.Serialization.Json
 		}
 
 		[Test]
-		public void JsonData_Convertation_ToString()
+		public void JsonData_Conversion_ToString()
 		{
 			var jsonData = JsonMapper.Default.ToObject(StringResources.PersonArray);
 			var s = jsonData.ToJson();
@@ -116,7 +116,8 @@ namespace TMS.Common.Tests.Serialization.Json
 		[Test]
 		public void ReadEmpireJson()
 		{
-			var str = File.ReadAllText(@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_FullEmpireTest.json");
+			var str = FileResources.GetJsonTextAsset("_FullEmpireTest").text;   
+				//File.ReadAllText(@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_FullEmpireTest.json");
 
 			var time = DateTime.Now;
 
@@ -130,7 +131,8 @@ namespace TMS.Common.Tests.Serialization.Json
 		[Test]
 		public void ReadEmpireJsonAsClass()
 		{
-			var str = File.ReadAllText(@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_FullEmpireTest.json");
+			var str = FileResources.GetJsonTextAsset("_FullEmpireTest").text;  
+				//File.ReadAllText(@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_FullEmpireTest.json");
 
 			var time = DateTime.Now;
 
@@ -144,7 +146,8 @@ namespace TMS.Common.Tests.Serialization.Json
 		[Test]
 		public void ReadEmpireJsonAsDic()
 		{
-			var str = File.ReadAllText(@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_FullEmpireTest.json");
+			var str = FileResources.GetJsonTextAsset("_FullEmpireTest").text; 
+				//File.ReadAllText(@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_FullEmpireTest.json");
 
 			var time = DateTime.Now;
 
@@ -174,7 +177,8 @@ namespace TMS.Common.Tests.Serialization.Json
 		{
 			Empire empire = null, empire1, empire2;
 
-			var str = File.ReadAllText(@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_FullEmpireTest.json");
+			var str = FileResources.GetJsonTextAsset("_FullEmpireTest").text; 
+				//File.ReadAllText(@"E:\ws\dev\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_FullEmpireTest.json");
 
 			if (!str.IsNullOrEmpty())
 			{
@@ -213,9 +217,9 @@ namespace TMS.Common.Tests.Serialization.Json
 		[Test]
 		public void ReadConfigFileJson()
 		{
-			var jsonStr =
-				File.ReadAllText(
-					@"Z:\SuperMax\Git\swar\skywarsarchonrises\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_Config.json");
+			var jsonStr = FileResources.GetJsonTextAsset("_Config").text;
+				// File.ReadAllText(
+				// 	@"Z:\SuperMax\Git\swar\skywarsarchonrises\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_Config.json");
 			var jsonData = JsonMapper.Default.ToObject(jsonStr);
 			Assert.IsNotNull(jsonData);
 		}
@@ -223,9 +227,9 @@ namespace TMS.Common.Tests.Serialization.Json
 		[Test]
 		public void ReadNetworkConfigFileJson()
 		{
-			var jsonStr =
-				File.ReadAllText(
-					@"Z:\SuperMax\Git\swar\skywarsarchonrises\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_NetworkConfig.json");
+			var jsonStr = FileResources.GetJsonTextAsset("_NetworkConfig").text;
+				// File.ReadAllText(
+				// 	@"Z:\SuperMax\Git\swar\skywarsarchonrises\unity\infr\TMS\TMS\TMS.Common.Test\Serialization\Json\TestResources\_NetworkConfig.json");
 			var jsonData = JsonMapper.Default.ToObject(jsonStr);
 			Assert.IsNotNull(jsonData);
 

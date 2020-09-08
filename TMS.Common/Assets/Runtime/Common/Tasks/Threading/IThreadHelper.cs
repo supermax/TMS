@@ -24,11 +24,11 @@ namespace TMS.Common.Tasks.Threading
 		/// </value>
 		TaskDistributor CurrentTaskDistributor { get; }
 
-		/// <summary>
-		/// Determines whether called method is on main thread
-		/// </summary>
-		/// <returns></returns>
-		bool IsMainThread();
+		// /// <summary>
+		// /// Determines whether called method is on main thread
+		// /// </summary>
+		// /// <returns></returns>
+		// bool IsMainThread();
 
 		/// <summary>
 		/// Starts the coroutine.

@@ -15,6 +15,8 @@ using Object = UnityEngine.Object;
 
 #if UNITY_EDITOR
 using TMS.Common.Modularity.Unity;
+using TMS.Common.Tasks.Threading;
+
 #endif
 #endif
 
@@ -275,9 +277,21 @@ namespace TMS.Common.Modularity.Ioc
 		/// <returns> </returns>
 		public T Resolve<T>(params object[] parameters)
 		{
-			var res = Resolve(typeof(T), parameters);
-			if (res == null) return default(T);
-			return (T)res;
+			T Func()
+			{
+				var res = Resolve(typeof(T), parameters);
+				if (res == null) return default(T);
+				return (T) res;
+			}
+
+			if (ThreadHelper.IsMainThread())
+			{
+				var res = Func();
+				return res;
+			}
+
+			var task = ThreadHelper.Dispatcher.Dispatch((Func<T>) Func);
+			return task.Result;
 		}
 
 		private object Resolve(Type key, params object[] parameters)
@@ -336,9 +350,21 @@ namespace TMS.Common.Modularity.Ioc
 		/// <returns> </returns>
 		public T Resolve<T>(Type registeredKeyType, params object[] parameters)
 		{
-			var res = Resolve(typeof(T), registeredKeyType, parameters);
-			if (res == null) return default(T);
-			return (T) res;
+			T Func()
+			{
+				var res = Resolve(typeof(T), registeredKeyType, parameters);
+				if (res == null) return default(T);
+				return (T) res;
+			}
+
+			if (ThreadHelper.IsMainThread())
+			{
+				var res = Func();
+				return res;
+			}
+
+			var task = ThreadHelper.Dispatcher.Dispatch(Func);
+			return task.Result;
 		}
 
 		private object Resolve(Type key, Type registeredKeyType, params object[] parameters)
